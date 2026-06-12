@@ -115,13 +115,13 @@ const menus = {
     {
       name: "Opus-One",
       price: "¥15,000",
-      image: "images/opas-one.png
+      image: "images/opas-one.png"
     },
 
     {
       name: "La dame de Monrose",
       price: "¥15,000",
-      image: "images/radum.png
+      image: "images/radum.png"
     },
     
     { type: "header", title: "WHITE WINE" },
