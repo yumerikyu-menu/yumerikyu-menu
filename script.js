@@ -113,11 +113,17 @@ const menus = {
   wine: [
     { type: "header", title: "RED WINE" },
     {
-      name: "RED WINE",
+      name: "Opus-One",
       price: "¥15,000",
-      image: "images/red-wine.png"
+      image: "images/opas-one.png
     },
 
+    {
+      name: "La dame de Monrose",
+      price: "¥15,000",
+      image: "images/radum.png
+    },
+    
     { type: "header", title: "WHITE WINE" },
     {
       name: "WHITE WINE",
