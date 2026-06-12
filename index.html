@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>夢RIKYU MENU</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <section id="openingScreen" class="opening-screen">
+    <h1>夢RIKYU</h1>
+    <p>DRINK MENU</p>
+  </section>
+
+  <header id="mainHeader" class="hidden">
+    <h1>夢RIKYU MENU</h1>
+    <p>Select Category</p>
+  </header>
+
+  <main id="mainContent" class="hidden">
+
+    <section id="categoryScreen" class="category-screen">
+      <button onclick="showMenu('champagne')">CHAMPAGNE</button>
+      <button onclick="showMenu('whisky')">WHISKY</button>
+      <button onclick="showMenu('wine')">WINE</button>
+      <button onclick="showMenu('shochu')">SHOCHU</button>
+      <button onclick="showMenu('shot')">SHOT DRINK</button>
+    </section>
+
+    <section id="menuOpeningScreen" class="menu-opening-screen hidden">
+      <h1 id="menuOpeningTitle"></h1>
+    </section>
+
+    <section id="listScreen" class="list-screen hidden">
+      <button class="back-btn" onclick="showCategories()">← BACK</button>
+      <h2 id="categoryTitle"></h2>
+      <div id="menuList"></div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
