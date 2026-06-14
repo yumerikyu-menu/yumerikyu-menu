@@ -250,4 +250,13 @@ header p {
   .card h2 {
     font-size: 1.1rem;
   }
+  .opening-logo {
+  　width: 85%;
+    max-width: 650px;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 35px rgba(255, 215, 0, 0.45);
+    animation: openingLogo 1.5s ease forwards;
+  }
 }
