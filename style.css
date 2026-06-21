@@ -4,70 +4,53 @@
   box-sizing: border-box;
 }
 
+html,
 body {
-  background: #050505;
+  width: 100%;
+  min-height: 100%;
+  background: #000;
   color: white;
   font-family: Georgia, "Yu Mincho", serif;
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
-/* 最初のオープニング */
+/* 最初のロゴ画面 */
 .opening-screen {
   position: fixed;
   inset: 0;
   z-index: 999;
 
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  background: radial-gradient(circle, #222 0%, #050505 70%);
-  color: gold;
+  background: #000;
+  overflow: hidden;
 
   animation: openingFadeOut 1s ease forwards;
-  animation-delay: 2.2s;
+  animation-delay: 2.4s;
 }
 
-.opening-screen h1 {
-  font-size: 4rem;
-  letter-spacing: 8px;
-  text-shadow: 0 0 30px rgba(255, 215, 0, 0.9);
-  animation: openingLogo 1.5s ease forwards;
-}
-
-.opening-screen p {
-  margin-top: 18px;
-  font-size: 1.4rem;
-  letter-spacing: 5px;
-  color: #ddd;
-  animation: openingText 1.8s ease forwards;
+.opening-logo {
+  width: 88%;
+  max-width: 720px;
+  height: auto;
+  display: block;
+  animation: openingLogo 1.6s ease forwards;
 }
 
 @keyframes openingLogo {
   from {
     opacity: 0;
-    transform: scale(0.85);
+    transform: scale(0.88);
   }
 
   to {
     opacity: 1;
     transform: scale(1);
-  }
-}
-
-@keyframes openingText {
-  from {
-    opacity: 0;
-    transform: translateY(15px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
   }
 }
 
@@ -81,8 +64,8 @@ body {
 /* ヘッダー */
 header {
   text-align: center;
-  padding: 45px 20px 25px;
-  background: radial-gradient(circle, #222 0%, #050505 70%);
+  padding: 42px 20px 24px;
+  background: #000;
 }
 
 header h1 {
@@ -95,17 +78,18 @@ header h1 {
 header p {
   margin-top: 10px;
   color: #ccc;
+  letter-spacing: 2px;
 }
 
-/* カテゴリ画面 */
-.category-screen {
+/* メニュー選択画面 */
+.menu-screen {
   padding: 30px 20px;
   display: flex;
   flex-direction: column;
   gap: 22px;
 }
 
-.category-screen button {
+.menu-screen button {
   padding: 28px 20px;
   font-size: 1.45rem;
   letter-spacing: 3px;
@@ -116,15 +100,26 @@ header p {
   box-shadow: 0 0 20px rgba(255, 215, 0, 0.12);
 }
 
-/* カテゴリを押した後の一瞬の画面 */
+/* 戻るボタン */
+.back-btn {
+  margin-bottom: 8px;
+  padding: 12px 18px !important;
+  color: gold !important;
+  background: transparent !important;
+  border: 1px solid gold !important;
+  border-radius: 999px !important;
+  font-size: 1rem !important;
+  letter-spacing: 1px !important;
+  box-shadow: none !important;
+}
+
+/* カテゴリ遷移画面 */
 .menu-opening-screen {
   min-height: 70vh;
-
   display: flex;
   justify-content: center;
   align-items: center;
-
-  background: radial-gradient(circle, #222 0%, #050505 70%);
+  background: #000;
 }
 
 .menu-opening-screen h1 {
@@ -133,8 +128,7 @@ header p {
   letter-spacing: 6px;
   text-align: center;
   text-shadow: 0 0 30px rgba(255, 215, 0, 0.9);
-
-  animation: menuTitleFade 1.5s ease forwards;
+  animation: menuTitleFade 1.2s ease forwards;
 }
 
 @keyframes menuTitleFade {
@@ -149,19 +143,9 @@ header p {
   }
 }
 
-/* 一覧画面 */
+/* 商品一覧画面 */
 .list-screen {
   padding: 20px;
-}
-
-.back-btn {
-  margin-bottom: 20px;
-  padding: 10px 18px;
-  color: gold;
-  background: transparent;
-  border: 1px solid gold;
-  border-radius: 999px;
-  font-size: 1rem;
 }
 
 #categoryTitle {
@@ -173,7 +157,6 @@ header p {
   text-shadow: 0 0 18px rgba(255, 215, 0, 0.6);
 }
 
-/* 区切り見出し */
 .section-title {
   margin: 32px 0 18px;
   padding: 12px 0;
@@ -189,7 +172,6 @@ header p {
   text-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
 }
 
-/* 商品カード */
 .card {
   display: flex;
   align-items: center;
@@ -225,38 +207,50 @@ header p {
 
 /* スマホ調整 */
 @media (max-width: 480px) {
-  .opening-screen h1 {
-    font-size: 3rem;
+  .opening-logo {
+    width: 92%;
+    max-width: 340px;
+  }
+
+  header {
+    padding: 36px 16px 20px;
   }
 
   header h1 {
-    font-size: 2rem;
+    font-size: 1.75rem;
+    letter-spacing: 3px;
   }
 
-  .category-screen button {
-    font-size: 1.2rem;
-    padding: 24px 18px;
+  .menu-screen {
+    padding: 24px 16px;
+    gap: 18px;
+  }
+
+  .menu-screen button {
+    font-size: 1.1rem;
+    padding: 23px 16px;
   }
 
   .menu-opening-screen h1 {
-    font-size: 2.2rem;
+    font-size: 2rem;
+    letter-spacing: 4px;
+  }
+
+  .card {
+    gap: 15px;
+    padding: 15px;
   }
 
   .card img {
-    width: 85px;
-    height: 120px;
+    width: 82px;
+    height: 115px;
   }
 
   .card h2 {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
   }
-  .opening-logo {
-  　width: 85%;
-    max-width: 650px;
-    background: white;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 0 35px rgba(255, 215, 0, 0.45);
-    animation: openingLogo 1.5s ease forwards;
+
+  .card p {
+    font-size: 1rem;
   }
 }
