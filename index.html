@@ -9,42 +9,42 @@
 <body>
 
   <section id="openingScreen" class="opening-screen">
-  <img src="images/rikyu_logo.png" alt="夢RIKYU" class="opening-logo">
-</section>
-
-<header id="mainHeader" class="hidden">
-  <h1>夢RIKYU MENU</h1>
-  <p>Select Menu</p>
-</header>
-
-<main id="mainContent" class="hidden">
-
-  <section id="mainMenuScreen" class="category-screen">
-    <button onclick="showDrinkCategories()">DRINK MENU</button>
-    <button onclick="showComingSoon('SET MENU')">SET MENU</button>
-    <button onclick="showComingSoon('FOOD MENU')">FOOD MENU</button>
+    <img src="images/rikyu_logo.png" alt="夢RIKYU" class="opening-logo">
   </section>
 
-  <section id="drinkCategoryScreen" class="category-screen hidden">
-    <button class="back-btn" onclick="showMainMenu()">← BACK</button>
-    <button onclick="showMenu('champagne')">CHAMPAGNE</button>
-    <button onclick="showMenu('whisky')">WHISKY</button>
-    <button onclick="showMenu('wine')">WINE</button>
-    <button onclick="showMenu('shochu')">SHOCHU</button>
-    <button onclick="showMenu('shot')">SHOT DRINK</button>
-  </section>
+  <header id="mainHeader" class="hidden">
+    <h1>夢RIKYU MENU</h1>
+    <p>Select Menu</p>
+  </header>
 
-  <section id="menuOpeningScreen" class="menu-opening-screen hidden">
-    <h1 id="menuOpeningTitle"></h1>
-  </section>
+  <main id="mainContent" class="hidden">
 
-  <section id="listScreen" class="list-screen hidden">
-    <button class="back-btn" onclick="showDrinkCategories()">← BACK</button>
-    <h2 id="categoryTitle"></h2>
-    <div id="menuList"></div>
-  </section>
+    <section id="mainMenuScreen" class="menu-screen">
+      <button onclick="showDrinkCategories()">DRINK MENU</button>
+      <button onclick="showComingSoon('SET MENU')">SET MENU</button>
+      <button onclick="showComingSoon('FOOD MENU')">FOOD MENU</button>
+    </section>
 
-</main>
+    <section id="drinkCategoryScreen" class="menu-screen hidden">
+      <button class="back-btn" onclick="showMainMenu()">← BACK</button>
+      <button onclick="showMenu('champagne')">CHAMPAGNE</button>
+      <button onclick="showMenu('whisky')">WHISKY</button>
+      <button onclick="showMenu('wine')">WINE</button>
+      <button onclick="showMenu('shochu')">SHOCHU</button>
+      <button onclick="showMenu('shot')">SHOT DRINK</button>
+    </section>
+
+    <section id="menuOpeningScreen" class="menu-opening-screen hidden">
+      <h1 id="menuOpeningTitle"></h1>
+    </section>
+
+    <section id="listScreen" class="list-screen hidden">
+      <button class="back-btn" onclick="showDrinkCategories()">← BACK</button>
+      <h2 id="categoryTitle"></h2>
+      <div id="menuList"></div>
+    </section>
+
+  </main>
 
   <script src="script.js"></script>
 </body>
