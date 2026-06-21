@@ -117,13 +117,12 @@ const menus = {
       price: "¥15,000",
       image: "images/opas-one.png"
     },
-
     {
       name: "La dame de Monrose",
       price: "¥15,000",
       image: "images/radum.png"
     },
-    
+
     { type: "header", title: "WHITE WINE" },
     {
       name: "WHITE WINE",
@@ -155,8 +154,7 @@ const menus = {
       name: "二階堂",
       price: "¥8,000",
       image: "images/nikaido.png"
-    },
-
+    }
   ],
 
   shot: [
@@ -175,10 +173,7 @@ const menus = {
       name: "テキーラ観覧車",
       price: "¥2,000",
       image: "images/tequila_kanransya.png"
-    },
-
-    
-
+    }
   ]
 };
 
@@ -190,22 +185,43 @@ const titles = {
   shot: "SHOT DRINK"
 };
 
+function hideAllScreens() {
+  document.getElementById("mainMenuScreen").classList.add("hidden");
+  document.getElementById("drinkCategoryScreen").classList.add("hidden");
+  document.getElementById("menuOpeningScreen").classList.add("hidden");
+  document.getElementById("listScreen").classList.add("hidden");
+}
+
+function showMainMenu() {
+  hideAllScreens();
+  document.getElementById("mainMenuScreen").classList.remove("hidden");
+  window.scrollTo(0, 0);
+}
+
+function showDrinkCategories() {
+  hideAllScreens();
+  document.getElementById("drinkCategoryScreen").classList.remove("hidden");
+  window.scrollTo(0, 0);
+}
+
+function showComingSoon(title) {
+  alert(`${title} は準備中です`);
+}
+
 function showMenu(category) {
-  const drinkCategoryScreen = document.getElementById("drinkCategoryScreen");
-  const listScreen = document.getElementById("listScreen");
   const menuOpeningScreen = document.getElementById("menuOpeningScreen");
   const menuOpeningTitle = document.getElementById("menuOpeningTitle");
-  const menuList = document.getElementById("menuList");
+  const listScreen = document.getElementById("listScreen");
   const categoryTitle = document.getElementById("categoryTitle");
+  const menuList = document.getElementById("menuList");
 
-  drinkCategoryScreen.classList.add("hidden");
-  listScreen.style.display = "none";
+  hideAllScreens();
 
   menuOpeningTitle.textContent = `${titles[category]} MENU`;
-  menuOpeningScreen.style.display = "flex";
+  menuOpeningScreen.classList.remove("hidden");
+
   setTimeout(() => {
-    menuOpeningScreen.style.display = "none";
-    listScreen.style.display = "block";
+    hideAllScreens();
 
     categoryTitle.textContent = `${titles[category]} MENU`;
     menuList.innerHTML = "";
@@ -233,15 +249,9 @@ function showMenu(category) {
       menuList.appendChild(card);
     });
 
+    listScreen.classList.remove("hidden");
     window.scrollTo(0, 0);
   }, 1200);
-}
-
-function showCategories() {
-  document.getElementById("categoryScreen").style.display = "flex";
-  document.getElementById("listScreen").style.display = "none";
-  document.getElementById("menuOpeningScreen").style.display = "none";
-  window.scrollTo(0, 0);
 }
 
 window.addEventListener("load", () => {
@@ -249,24 +259,6 @@ window.addEventListener("load", () => {
     document.getElementById("openingScreen").style.display = "none";
     document.getElementById("mainHeader").classList.remove("hidden");
     document.getElementById("mainContent").classList.remove("hidden");
+    showMainMenu();
   }, 3200);
 });
-function showDrinkCategories() {
-  document.getElementById("mainMenuScreen").classList.add("hidden");
-  document.getElementById("drinkCategoryScreen").classList.remove("hidden");
-  document.getElementById("listScreen").style.display = "none";
-  document.getElementById("menuOpeningScreen").style.display = "none";
-  window.scrollTo(0, 0);
-}
-
-function showMainMenu() {
-  document.getElementById("mainMenuScreen").classList.remove("hidden");
-  document.getElementById("drinkCategoryScreen").classList.add("hidden");
-  document.getElementById("listScreen").style.display = "none";
-  document.getElementById("menuOpeningScreen").style.display = "none";
-  window.scrollTo(0, 0);
-}
-
-function showComingSoon(title) {
-  alert(`${title} は準備中です`);
-}
