@@ -253,4 +253,51 @@ header p {
   .card p {
     font-size: 1rem;
   }
+  .set-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 22px;
+  margin-bottom: 16px;
+
+  background: linear-gradient(
+    135deg,
+    #111,
+    #1c1c1c
+  );
+
+  border: 1px solid rgba(
+    255,
+    215,
+    0,
+    0.35
+  );
+
+  border-radius: 18px;
+
+  box-shadow:
+    0 0 20px rgba(
+      255,
+      215,
+      0,
+      0.12
+    );
+}
+
+.set-left h2 {
+  color: gold;
+  font-size: 1.2rem;
+  margin-bottom: 6px;
+}
+
+.set-left p {
+  color: #ccc;
+}
+
+.set-price {
+  color: gold;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
 }
