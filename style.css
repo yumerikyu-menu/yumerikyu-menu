@@ -17,19 +17,15 @@ body {
   display: none !important;
 }
 
-/* 最初のロゴ画面 */
 .opening-screen {
   position: fixed;
   inset: 0;
   z-index: 999;
-
   display: flex;
   justify-content: center;
   align-items: center;
-
   background: #000;
   overflow: hidden;
-
   animation: openingFadeOut 1s ease forwards;
   animation-delay: 2.4s;
 }
@@ -47,7 +43,6 @@ body {
     opacity: 0;
     transform: scale(0.88);
   }
-
   to {
     opacity: 1;
     transform: scale(1);
@@ -61,7 +56,6 @@ body {
   }
 }
 
-/* ヘッダー */
 header {
   text-align: center;
   padding: 42px 20px 24px;
@@ -81,7 +75,6 @@ header p {
   letter-spacing: 2px;
 }
 
-/* メニュー選択画面 */
 .menu-screen {
   padding: 30px 20px;
   display: flex;
@@ -100,7 +93,6 @@ header p {
   box-shadow: 0 0 20px rgba(255, 215, 0, 0.12);
 }
 
-/* 戻るボタン */
 .back-btn {
   margin-bottom: 8px;
   padding: 12px 18px !important;
@@ -113,7 +105,6 @@ header p {
   box-shadow: none !important;
 }
 
-/* カテゴリ遷移画面 */
 .menu-opening-screen {
   min-height: 70vh;
   display: flex;
@@ -136,39 +127,36 @@ header p {
     opacity: 0;
     transform: scale(0.9);
   }
-
   to {
     opacity: 1;
     transform: scale(1);
   }
 }
 
-/* 商品一覧画面 */
 .list-screen {
   padding: 20px;
 }
 
 #categoryTitle {
-  color: gold;
+  color: #ffd700;
   text-align: center;
-  letter-spacing: 4px;
-  margin-bottom: 25px;
-  font-size: 1.8rem;
-  text-shadow: 0 0 18px rgba(255, 215, 0, 0.6);
+  letter-spacing: 8px;
+  margin-bottom: 28px;
+  font-size: 2rem;
+  text-shadow:
+    0 0 10px rgba(255, 215, 0, 0.8),
+    0 0 25px rgba(255, 215, 0, 0.4);
 }
 
 .section-title {
   margin: 32px 0 18px;
   padding: 12px 0;
   text-align: center;
-
   color: gold;
   font-size: 1.2rem;
   letter-spacing: 4px;
-
   border-top: 1px solid rgba(255, 215, 0, 0.4);
   border-bottom: 1px solid rgba(255, 215, 0, 0.4);
-
   text-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
 }
 
@@ -176,14 +164,11 @@ header p {
   display: flex;
   align-items: center;
   gap: 20px;
-
   padding: 18px;
   margin-bottom: 18px;
-
   background: linear-gradient(135deg, #111, #1c1c1c);
   border: 1px solid rgba(255, 215, 0, 0.35);
   border-radius: 18px;
-
   box-shadow: 0 0 20px rgba(255, 215, 0, 0.12);
 }
 
@@ -205,7 +190,61 @@ header p {
   font-size: 1.15rem;
 }
 
-/* スマホ調整 */
+/* SET MENU */
+.set-section-title {
+  margin: 42px 0 24px;
+  padding: 14px 0;
+  color: #d4af37;
+  text-align: center;
+  font-size: 1.35rem;
+  letter-spacing: 6px;
+  font-weight: bold;
+  border-top: 1px solid rgba(212, 175, 55, 0.45);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.45);
+  text-shadow:
+    0 0 8px rgba(255, 215, 0, 0.8),
+    0 0 18px rgba(255, 215, 0, 0.45);
+}
+
+.luxury-set-row {
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 22px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.35);
+}
+
+.set-info h2 {
+  color: #f1c94c;
+  font-size: 1.55rem;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-shadow:
+    0 0 8px rgba(255, 215, 0, 0.55),
+    0 0 18px rgba(255, 215, 0, 0.25);
+}
+
+.set-info p {
+  margin-top: 8px;
+  color: #b8b8b8;
+  font-size: 1.05rem;
+  letter-spacing: 2px;
+}
+
+.luxury-price {
+  color: #ffd700;
+  font-size: 1.85rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  white-space: nowrap;
+  text-shadow:
+    0 0 10px rgba(255, 215, 0, 0.75),
+    0 0 22px rgba(255, 215, 0, 0.35);
+}
+
 @media (max-width: 480px) {
   .opening-logo {
     width: 92%;
@@ -253,144 +292,19 @@ header p {
   .card p {
     font-size: 1rem;
   }
-  .set-card {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 
-  padding: 22px;
-  margin-bottom: 16px;
-
-  background: linear-gradient(
-    135deg,
-    #111,
-    #1c1c1c
-  );
-
-  border: 1px solid rgba(
-    255,
-    215,
-    0,
-    0.35
-  );
-
-  border-radius: 18px;
-
-  box-shadow:
-    0 0 20px rgba(
-      255,
-      215,
-      0,
-      0.12
-    );
-}
-
-.set-left h2 {
-  color: gold;
-  font-size: 1.2rem;
-  margin-bottom: 6px;
-}
-
-.set-left p {
-  color: #ccc;
-}
-
-.set-price {
-  color: gold;
-  font-size: 1.6rem;
-  font-weight: bold;
-}
-/* SET MENU 専用デザイン */
-.set-section-title {
-  position: relative;
-  margin: 42px 0 26px;
-  padding: 14px 0;
-
-  color: #d4af37;
-  text-align: center;
-  font-size: 1.45rem;
-  letter-spacing: 7px;
-  font-weight: bold;
-
-  border-top: 1px solid rgba(212, 175, 55, 0.45);
-  border-bottom: 1px solid rgba(212, 175, 55, 0.45);
-
-  text-shadow:
-    0 0 8px rgba(255, 215, 0, 0.8),
-    0 0 18px rgba(255, 215, 0, 0.45);
-}
-
-.luxury-set-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  padding: 22px 4px;
-  margin: 0 12px;
-
-  border-bottom: 1px solid rgba(212, 175, 55, 0.35);
-}
-
-.set-info h2 {
-  color: #f1c94c;
-  font-size: 1.55rem;
-  letter-spacing: 2px;
-  font-weight: bold;
-
-  text-shadow:
-    0 0 8px rgba(255, 215, 0, 0.55),
-    0 0 18px rgba(255, 215, 0, 0.25);
-}
-
-.set-info p {
-  margin-top: 8px;
-
-  color: #b8b8b8;
-  font-size: 1.05rem;
-  letter-spacing: 2px;
-}
-
-.luxury-price {
-  color: #ffd700;
-  font-size: 1.85rem;
-  font-weight: bold;
-  letter-spacing: 2px;
-  white-space: nowrap;
-
-  text-shadow:
-    0 0 10px rgba(255, 215, 0, 0.75),
-    0 0 22px rgba(255, 215, 0, 0.35);
-}
-
-/* SET MENUのタイトルも高級感寄せ */
-#categoryTitle {
-  color: #ffd700;
-  text-align: center;
-  letter-spacing: 8px;
-  margin-bottom: 28px;
-  font-size: 2rem;
-
-  text-shadow:
-    0 0 10px rgba(255, 215, 0, 0.8),
-    0 0 25px rgba(255, 215, 0, 0.4);
-}
-
-/* スマホ調整 */
-@media (max-width: 480px) {
   .set-section-title {
-    font-size: 1.05rem;
+    font-size: 1rem;
     letter-spacing: 4px;
     margin: 34px 0 20px;
   }
 
   .luxury-set-row {
-    padding: 18px 2px;
-    margin: 0 6px;
+    padding: 18px 4px;
   }
 
   .set-info h2 {
-    font-size: 1.15rem;
-    letter-spacing: 1px;
+    font-size: 1.1rem;
   }
 
   .set-info p {
@@ -398,12 +312,11 @@ header p {
   }
 
   .luxury-price {
-    font-size: 1.35rem;
+    font-size: 1.25rem;
   }
 
   #categoryTitle {
     font-size: 1.55rem;
     letter-spacing: 5px;
   }
-}
 }
