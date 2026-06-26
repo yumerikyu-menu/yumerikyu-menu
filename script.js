@@ -3,17 +3,17 @@ const menus = {
     { type: "header", title: "ARMAND" },
     {
       name: "ARMAND GOLD",
-      price: "¥150,000",
+      price: "¥146,300",
       image: "images/Armand Gold bottle.png"
     },
     {
       name: "ARMAND GREEN",
-      price: "¥120,000",
+      price: "¥231,000",
       image: "images/Armand-Green.png"
     },
     {
       name: "ARMAND SILVER",
-      price: "¥90,000",
+      price: "¥423,500",
       image: "images/Armand-Silver.png"
     },
 
@@ -25,56 +25,56 @@ const menus = {
     },
     {
       name: "SOMEI BLUE",
-      price: "¥90,000",
+      price: "¥880,000",
       image: "images/SOMEI_BLUE.png"
     },
     {
       name: "SOMEI BLACK",
-      price: "¥90,000",
+      price: "¥518,100",
       image: "images/SOMEI_BLACK.png"
     },
     {
       name: "SOMEI PLATINA",
-      price: "¥90,000",
+      price: "¥364,100",
       image: "images/SOMEI_PLATHINA.png"
     },
     {
       name: "SOMEI ROSE",
-      price: "¥90,000",
+      price: "¥210,100",
       image: "images/SOMEI_ROSE.png"
     },
     {
       name: "SOMEI",
-      price: "¥90,000",
+      price: "¥115,500",
       image: "images/SOMEI.png"
     },
 
     { type: "header", title: "MOËT & CHANDON" },
     {
       name: "MOET BRUT",
-      price: "¥80,000",
+      price: "¥24,750",
       image: "images/MOET_BRUT.png"
     },
     {
       name: "MOET ICE",
-      price: "¥80,000",
+      price: "¥34,100",
       image: "images/MOET_ICE.png"
     },
     {
       name: "MOET NECTAR",
-      price: "¥80,000",
+      price: "¥31,900",
       image: "images/MOET_NECTOR.png"
     },
     {
       name: "MOET ROSE",
-      price: "¥80,000",
+      price: "¥29,700",
       image: "images/MOET_ROSE.png"
     },
 
     { type: "header", title: "DOM PÉRIGNON" },
     {
       name: "DOM PERIGNON",
-      price: "¥80,000",
+      price: "¥107,800",
       image: "images/DOMPERI.png"
     }
   ],
