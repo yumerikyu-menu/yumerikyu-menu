@@ -240,17 +240,17 @@ function showSetMenu() {
 
     { type: "header", title: "OPTION" },
     {
-      name: "延長 (30 min)",
+      name: "延長（30 min）",
       detail: "",
       price: "¥4,400"
     },
     {
-      name: "延長 60 (min)",
+      name: "延長（60 min）",
       detail: "",
       price: "¥6,600"
     },
     {
-      name: "VIP延長 (60 min)",
+      name: "VIP延長（60 min）",
       detail: "",
       price: "¥7,700"
     },
@@ -265,27 +265,6 @@ function showSetMenu() {
       price: "¥1,100"
     }
   ];
-
-function showFoodMenu() {
-  hideAllScreens();
-
-  const listScreen = document.getElementById("listScreen");
-  const categoryTitle = document.getElementById("categoryTitle");
-  const menuList = document.getElementById("menuList");
-
-  categoryTitle.textContent = "FOOD MENU";
-
-  menuList.innerHTML = `
-    <div class="food-image-list">
-      <img src="images/LUSH_MENU.png" alt="LUSH">
-      <img src="images/三寿司_MENU.png" alt="三寿司">
-      <img src="images/鳥八_MENU.png" alt="鳥八">
-    </div>
-  `;
-
-  listScreen.classList.remove("hidden");
-  window.scrollTo(0, 0);
-}
 
   setMenu.forEach(item => {
     if (item.type === "header") {
@@ -309,6 +288,27 @@ function showFoodMenu() {
 
     menuList.appendChild(row);
   });
+
+  listScreen.classList.remove("hidden");
+  window.scrollTo(0, 0);
+}
+
+function showFoodMenu() {
+  hideAllScreens();
+
+  const listScreen = document.getElementById("listScreen");
+  const categoryTitle = document.getElementById("categoryTitle");
+  const menuList = document.getElementById("menuList");
+
+  categoryTitle.textContent = "FOOD MENU";
+
+  menuList.innerHTML = `
+    <div class="food-image-list">
+      <img src="images/LUSH_MENU.png" alt="LUSH">
+      <img src="images/三寿司_MENU.png" alt="三寿司">
+      <img src="images/鳥八_MENU.png" alt="鳥八">
+    </div>
+  `;
 
   listScreen.classList.remove("hidden");
   window.scrollTo(0, 0);
