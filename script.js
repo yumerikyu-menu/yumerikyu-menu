@@ -204,10 +204,100 @@ function showDrinkCategories() {
   window.scrollTo(0, 0);
 }
 
-function showComingSoon(title) {
-  alert(`${title} は準備中です`);
-}
+function showSetMenu() {
+  hideAllScreens();
 
+  const listScreen = document.getElementById("listScreen");
+  const categoryTitle = document.getElementById("categoryTitle");
+  const menuList = document.getElementById("menuList");
+
+  categoryTitle.textContent = "SET MENU";
+  menuList.innerHTML = "";
+
+  const setMenu = [
+    {
+      type: "header",
+      title: "MAIN ROOM"
+    },
+    {
+      name: "20:00 ～ 20:59",
+      detail: "40min",
+      price: "¥4,400"
+    },
+    {
+      name: "21:00 ～ LAST",
+      detail: "60min",
+      price: "¥6,600"
+    },
+
+    {
+      type: "header",
+      title: "KARAOKE VIP ROOM"
+    },
+    {
+      name: "20:00 ～ LAST",
+      detail: "60min",
+      price: "¥7,700"
+    },
+
+    {
+      type: "header",
+      title: "OPTION"
+    },
+    {
+      name: "延長",
+      detail: "30min",
+      price: "¥4,400"
+    },
+    {
+      name: "延長",
+      detail: "60min",
+      price: "¥6,600"
+    },
+    {
+      name: "VIP延長",
+      detail: "60min",
+      price: "¥7,700"
+    },
+    {
+      name: "追加指名",
+      detail: "",
+      price: "¥1,100"
+    },
+    {
+      name: "持ち込み料",
+      detail: "",
+      price: "¥1,100"
+    }
+  ];
+
+  setMenu.forEach(item => {
+    if (item.type === "header") {
+      const sectionTitle = document.createElement("div");
+      sectionTitle.className = "section-title";
+      sectionTitle.textContent = item.title;
+      menuList.appendChild(sectionTitle);
+      return;
+    }
+
+    const card = document.createElement("div");
+    card.className = "set-card";
+
+    card.innerHTML = `
+      <div class="set-left">
+        <h2>${item.name}</h2>
+        <p>${item.detail}</p>
+      </div>
+      <div class="set-price">
+        ${item.price}
+      </div>
+    `;
+
+    menuList.appendChild(card);
+  });
+
+  listScreen.classList.remove("hidden");
+}
 function showMenu(category) {
   const menuOpeningScreen = document.getElementById("menuOpeningScreen");
   const menuOpeningTitle = document.getElementById("menuOpeningTitle");
