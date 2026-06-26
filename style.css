@@ -315,3 +315,38 @@ header p {
     letter-spacing: 5px;
   }
 }
+
+/* FOOD MENU */
+.food-image-list {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.food-image-list img {
+  width: 100%;
+  height: auto;
+  display: block;
+
+  border-radius: 18px;
+  border: 1px solid rgba(212, 175, 55, 0.45);
+
+  background: #000;
+
+  box-shadow:
+    0 0 18px rgba(255, 215, 0, 0.22);
+}
+
+@media (max-width: 480px) {
+  .food-image-list {
+    gap: 20px;
+  }
+
+  .food-image-list img {
+    border-radius: 12px;
+  }
+}
