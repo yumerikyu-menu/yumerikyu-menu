@@ -266,6 +266,27 @@ function showSetMenu() {
     }
   ];
 
+function showFoodMenu() {
+  hideAllScreens();
+
+  const listScreen = document.getElementById("listScreen");
+  const categoryTitle = document.getElementById("categoryTitle");
+  const menuList = document.getElementById("menuList");
+
+  categoryTitle.textContent = "FOOD MENU";
+
+  menuList.innerHTML = `
+    <div class="food-image-list">
+      <img src="images/LUSH_MENU.png" alt="LUSH">
+      <img src="images/三寿司_MENU.png" alt="三寿司">
+      <img src="images/鳥八_MENU.png" alt="鳥八">
+    </div>
+  `;
+
+  listScreen.classList.remove("hidden");
+  window.scrollTo(0, 0);
+}
+
   setMenu.forEach(item => {
     if (item.type === "header") {
       const title = document.createElement("div");
