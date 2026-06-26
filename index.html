@@ -19,14 +19,20 @@
 
   <main id="mainContent" class="hidden">
 
+    <!-- メインメニュー -->
     <section id="mainMenuScreen" class="menu-screen">
       <button onclick="showDrinkCategories()">DRINK MENU</button>
-      <button onclick="showComingSoon('SET MENU')">SET MENU</button>
+
+      <!-- ここだけ変更 -->
+      <button onclick="showSetMenu()">SET MENU</button>
+
       <button onclick="showComingSoon('FOOD MENU')">FOOD MENU</button>
     </section>
 
+    <!-- ドリンクカテゴリ -->
     <section id="drinkCategoryScreen" class="menu-screen hidden">
       <button class="back-btn" onclick="showMainMenu()">← BACK</button>
+
       <button onclick="showMenu('champagne')">CHAMPAGNE</button>
       <button onclick="showMenu('whisky')">WHISKY</button>
       <button onclick="showMenu('wine')">WINE</button>
@@ -34,18 +40,26 @@
       <button onclick="showMenu('shot')">SHOT DRINK</button>
     </section>
 
+    <!-- MENUアニメーション -->
     <section id="menuOpeningScreen" class="menu-opening-screen hidden">
       <h1 id="menuOpeningTitle"></h1>
     </section>
 
+    <!-- 一覧表示 -->
     <section id="listScreen" class="list-screen hidden">
-      <button class="back-btn" onclick="showDrinkCategories()">← BACK</button>
+
+      <!-- 戻るボタン -->
+      <button class="back-btn" onclick="showMainMenu()">← BACK</button>
+
       <h2 id="categoryTitle"></h2>
+
       <div id="menuList"></div>
+
     </section>
 
   </main>
 
   <script src="script.js"></script>
+
 </body>
 </html>
