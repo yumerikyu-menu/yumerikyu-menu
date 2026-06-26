@@ -240,17 +240,17 @@ function showSetMenu() {
 
     { type: "header", title: "OPTION" },
     {
-      name: "延長 30 min",
+      name: "延長 (30 min)",
       detail: "",
       price: "¥4,400"
     },
     {
-      name: "延長 60 min",
+      name: "延長 60 (min)",
       detail: "",
       price: "¥6,600"
     },
     {
-      name: "VIP延長 60 min",
+      name: "VIP延長 (60 min)",
       detail: "",
       price: "¥7,700"
     },
