@@ -204,6 +204,10 @@ function showDrinkCategories() {
   window.scrollTo(0, 0);
 }
 
+function showComingSoon(title) {
+  alert(`${title} は準備中です`);
+}
+
 function showSetMenu() {
   hideAllScreens();
 
@@ -216,7 +220,6 @@ function showSetMenu() {
 
   const setMenu = [
     { type: "header", title: "MAIN ROOM" },
-
     {
       name: "20:00 ～ 20:59",
       detail: "40 min",
@@ -229,7 +232,6 @@ function showSetMenu() {
     },
 
     { type: "header", title: "KARAOKE VIP ROOM" },
-
     {
       name: "20:00 ～ LAST",
       detail: "60 min",
@@ -237,7 +239,6 @@ function showSetMenu() {
     },
 
     { type: "header", title: "OPTION" },
-
     {
       name: "延長 30 min",
       detail: "",
@@ -267,17 +268,17 @@ function showSetMenu() {
 
   setMenu.forEach(item => {
     if (item.type === "header") {
-      const sectionTitle = document.createElement("div");
-      sectionTitle.className = "set-section-title";
-      sectionTitle.textContent = item.title;
-      menuList.appendChild(sectionTitle);
+      const title = document.createElement("div");
+      title.className = "set-section-title";
+      title.textContent = item.title;
+      menuList.appendChild(title);
       return;
     }
 
-    const card = document.createElement("div");
-    card.className = "luxury-set-row";
+    const row = document.createElement("div");
+    row.className = "luxury-set-row";
 
-    card.innerHTML = `
+    row.innerHTML = `
       <div class="set-info">
         <h2>${item.name}</h2>
         ${item.detail ? `<p>${item.detail}</p>` : ""}
@@ -285,12 +286,13 @@ function showSetMenu() {
       <div class="luxury-price">${item.price}</div>
     `;
 
-    menuList.appendChild(card);
+    menuList.appendChild(row);
   });
 
   listScreen.classList.remove("hidden");
   window.scrollTo(0, 0);
 }
+
 function showMenu(category) {
   const menuOpeningScreen = document.getElementById("menuOpeningScreen");
   const menuOpeningTitle = document.getElementById("menuOpeningTitle");
