@@ -250,77 +250,27 @@ header p {
     0 0 4px rgba(255, 215, 0, 0.45);
 }
 @media (max-width: 480px) {
-  .opening-logo {
-    width: 92%;
-    max-width: 340px;
-  }
-
-  header {
-    padding: 36px 16px 20px;
-  }
-
-  header h1 {
-    font-size: 1.75rem;
-    letter-spacing: 3px;
-  }
-
-  .menu-screen {
-    padding: 24px 16px;
-    gap: 18px;
-  }
-
-  .menu-screen button {
-    font-size: 1.1rem;
-    padding: 23px 16px;
-  }
-
-  .menu-opening-screen h1 {
-    font-size: 2rem;
-    letter-spacing: 4px;
-  }
-
-  .card {
-    gap: 15px;
-    padding: 15px;
-  }
-
-  .card img {
-    width: 82px;
-    height: 115px;
-  }
-
-  .card h2 {
-    font-size: 1.05rem;
-  }
-
-  .card p {
-    font-size: 1rem;
-  }
-
   .set-section-title {
-    font-size: 1rem;
-    letter-spacing: 4px;
-    margin: 34px 0 20px;
-  }
+  font-size: 1rem;
+  letter-spacing: 4px;
+  margin: 34px 0 20px;
+  padding: 13px 0;
+}
 
-  .luxury-set-row {
-    padding: 18px 4px;
-  }
+.luxury-set-row {
+  padding: 18px 4px;
+}
 
-  .set-info h2 {
-    font-size: 1.1rem;
-  }
+.set-info h2 {
+  font-size: 1.08rem;
+  letter-spacing: 0.8px;
+}
 
-  .set-info p {
-    font-size: 0.9rem;
-  }
+.set-info p {
+  font-size: 0.95rem;
+}
 
-  .luxury-price {
-    font-size: 1.25rem;
-  }
-
-  #categoryTitle {
-    font-size: 1.55rem;
-    letter-spacing: 5px;
-  }
+.luxury-price {
+  font-size: 1.22rem;
+}
 }
