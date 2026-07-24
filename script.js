@@ -19,7 +19,7 @@ const menus = {
     {
       name: "ARMAND ROSE",
       price: "¥423,500",
-      image: "images/Armand-ROSE.png"
+      image: "images/Armand-Rose.png"
     },
     {
       name: "ARMAND PURPLE",
@@ -115,7 +115,7 @@ const menus = {
     {
       name: "PERRIER-JOUET BLANC DE BLANCS",
       price: "¥107,800",
-      image: "images/Perrier-Joue Blanc de Blancs.png"
+      image: "images/Perrier-Jouet Blanc de Blancs.png"
     },
 
     { type: "header", title: "DOM PÉRIGNON" },
@@ -132,6 +132,12 @@ const menus = {
       image: "images/Veuve Clicquot.png"
     },
     
+    {
+      name: "VEUVE CLICQUOT ROSE",
+      price: "¥107,800",
+      image: "images/Veuve Clicquot_Rose.png"
+    },
+  
     {
       name: "VEUVE CLICQUOT RICH ROSE",
       price: "¥107,800",
