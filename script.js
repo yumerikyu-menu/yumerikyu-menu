@@ -182,14 +182,14 @@ const menus = {
     
   ],
 
-  Bourbon:[
+  Bourbon:　[
     { type: "header", title: "BOURBON" },
     {
       name: "Opus-One",
       price: "¥15,000",
       image: "images/opas-one.png"
     },
-  ]
+  ],
 
   wine: [
     { type: "header", title: "RED WINE" },
