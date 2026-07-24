@@ -18,29 +18,29 @@ const menus = {
     },
     {
       name: "ARMAND ROSE",
-      price: "¥423,500",
+      price: "¥231,000",
       image: "images/Armand-Rose.png"
     },
     {
       name: "ARMAND PURPLE",
-      price: "¥423,500",
+      price: "¥231,000",
       image: "images/Armand-Purple.png"
     },
     
     { type: "header", title: "ANGEL" },
     {
       name: "ANGEL WHITE",
-      price: "¥423,500",
+      price: "¥215,600",
       image: "images/ANGEL_WHITE.png"
     },
     {
       name: "ANGEL RUMINUS",
-      price: "¥423,500",
+      price: "¥188,650",
       image: "images/ANGEL_RUMINUS.png"
     },
     {
       name: "ANGEL BLACK",
-      price: "¥423,500",
+      price: "¥150,150",
       image: "images/ANGEL_BLACK.png"
     },
 
@@ -53,7 +53,7 @@ const menus = {
     },
     {
       name: "SOMEI BLUE",
-      price: "¥880,000",
+      price: "¥200,200",
       image: "images/SOMEI_BLUE.png"
     },
     {
