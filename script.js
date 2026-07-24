@@ -292,7 +292,7 @@ const titles = {
   champagne: "CHAMPAGNE",
   whisky: "WHISKY",
   Bourbon: "BOURBON",
-  Brandy: "BRANDY"
+  Brandy: "BRANDY",
   wine: "WINE",
   shochu: "SHOCHU",
   shot: "SHOT DRINK"
