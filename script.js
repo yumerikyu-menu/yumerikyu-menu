@@ -16,7 +16,35 @@ const menus = {
       price: "¥423,500",
       image: "images/Armand-Silver.png"
     },
+    {
+      name: "ARMAND ROSE",
+      price: "¥423,500",
+      image: "images/Armand-ROSE.png"
+    },
+    {
+      name: "ARMAND PURPLE",
+      price: "¥423,500",
+      image: "images/Armand-Purple.png"
+    },
+    
+    { type: "header", title: "ANGEL" },
+    {
+      name: "ANGEL WHITE",
+      price: "¥423,500",
+      image: "images/ANGEL_WHITE.png"
+    },
+    {
+      name: "ANGEL RUMINUS",
+      price: "¥423,500",
+      image: "images/ANGEL_RUMINUS.png"
+    },
+    {
+      name: "ANGEL BLACK",
+      price: "¥423,500",
+      image: "images/ANGEL_BLACK.png"
+    },
 
+    
     { type: "header", title: "SOMEI" },
     {
       name: "SOMEI RED",
@@ -71,11 +99,48 @@ const menus = {
       image: "images/MOET_ROSE.png"
     },
 
+    { type: "header", title: "PERRIER" },
+    {
+      name: "PERRIER-JOUET",
+      price: "¥107,800",
+      image: "images/Perrier-Jouet.png"
+    }
+    
+    {
+      name: "PERRIER-JOUET ROSE",
+      price: "¥107,800",
+      image: "images/Perrier-Jouet_ROSE.png"
+    }
+    {
+      name: "PERRIER-JOUET BLANC DE BLANCS",
+      price: "¥107,800",
+      image: "images/Perrier-Joue Blanc de Blancs.png"
+    }
+
     { type: "header", title: "DOM PÉRIGNON" },
     {
       name: "DOM PERIGNON",
       price: "¥107,800",
       image: "images/DOMPERI.png"
+    }
+
+    { type: "header", title: "VEUVE" },
+    {
+      name: "VEUVE CLICQUOT",
+      price: "¥107,800",
+      image: "images/Veuve Clicquot.png"
+    }
+    {
+      name: "VEUVE CLICQUOT RICH ROSE",
+      price: "¥107,800",
+      image: "images/Veuve Clicquot_Rich_Rose.png"
+    }
+    
+    { type: "header", title: "Cafe de Paris" },
+    {
+      name: "Cafe de Paris",
+      price: "¥107,800",
+      image: "images/Cafe de Paris.png"
     }
   ],
 
