@@ -205,7 +205,7 @@ const menus = {
       price: "¥15,000",
       image: "images/LW_harper.png"
     },
-
+    
   Brandy:　[
     { type: "header", title: "Brandy" },
     {
