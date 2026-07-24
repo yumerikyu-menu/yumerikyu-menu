@@ -291,8 +291,8 @@ const menus = {
 const titles = {
   champagne: "CHAMPAGNE",
   whisky: "WHISKY",
-  Bourbon: "BOURBON",
-  Brandy: "BRANDY",
+  bourbon: "BOURBON",
+  brandy: "BRANDY",
   wine: "WINE",
   shochu: "SHOCHU",
   shot: "SHOT DRINK"
