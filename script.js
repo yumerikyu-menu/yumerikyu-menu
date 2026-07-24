@@ -153,7 +153,7 @@ const menus = {
   ],
 
   whisky: [
-    { type: "header", title: "JAPANESE WHISKY" },
+    { type: "header", title: "WHISKY" },
     {
       name: "山崎12年",
       price: "¥30,000",
@@ -170,18 +170,26 @@ const menus = {
       image: "images/hakusyu.png"
     },
     {
-      name: "響",
+      name: "響ブレンダーチョイス",
       price: "¥35,000",
       image: "images/hibiki.png"
     },
-
-    { type: "header", title: "SCOTCH WHISKY" },
     {
       name: "MACALLAN",
       price: "¥25,000",
       image: "images/macallan.png"
-    }
+    },
+    
   ],
+
+  Bourbon:[
+    { type: "header", title: "BOURBON" },
+    {
+      name: "Opus-One",
+      price: "¥15,000",
+      image: "images/opas-one.png"
+    },
+  ]
 
   wine: [
     { type: "header", title: "RED WINE" },
