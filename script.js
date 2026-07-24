@@ -242,7 +242,7 @@ const menus = {
     }
   ],
 
-  nihonsyu: [
+  日本酒: [
     { type: "header", title: "日本酒" },
     {
       name: "水神",
@@ -261,7 +261,7 @@ const menus = {
     },
   ],
 
-  shochu: [
+  焼酎: [
     { type: "header", title: "芋焼酎" },
     {
       name: "黒霧島",
@@ -313,8 +313,8 @@ const titles = {
   bourbon: "BOURBON",
   brandy: "BRANDY",
   wine: "WINE",
-  nihonsyu: "nihonsyu",
-  shochu: "SHOCHU",
+  日本酒: "日本酒",
+  焼酎: "焼酎",
   shot: "SHOT DRINK"
 };
 
