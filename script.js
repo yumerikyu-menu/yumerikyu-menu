@@ -242,6 +242,25 @@ const menus = {
     }
   ],
 
+  nihonsyu: [
+    { type: "header", title: "日本酒" },
+    {
+      name: "水神",
+      price: "¥15,000",
+      image: "images/suijin.png"
+    },
+    {
+      name: "久保田万寿",
+      price: "¥15,000",
+      image: "images/kubota.png"
+    },
+    {
+      name: "獺祭 純米大吟醸",
+      price: "¥15,000",
+      image: "images/dassai.png"
+    },
+  ]
+
   shochu: [
     { type: "header", title: "芋焼酎" },
     {
