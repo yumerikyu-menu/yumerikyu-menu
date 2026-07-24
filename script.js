@@ -259,7 +259,7 @@ const menus = {
       price: "¥15,000",
       image: "images/dassai.png"
     },
-  ]
+  ],
 
   shochu: [
     { type: "header", title: "芋焼酎" },
@@ -284,7 +284,7 @@ const menus = {
       name: "二階堂",
       price: "¥8,000",
       image: "images/nikaido.png"
-    }
+    },
   ],
 
   shot: [
