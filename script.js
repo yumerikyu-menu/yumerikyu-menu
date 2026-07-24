@@ -313,6 +313,7 @@ const titles = {
   bourbon: "BOURBON",
   brandy: "BRANDY",
   wine: "WINE",
+  nihonsyu: "nihonsyu",
   shochu: "SHOCHU",
   shot: "SHOT DRINK"
 };
