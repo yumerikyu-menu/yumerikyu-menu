@@ -104,44 +104,46 @@ const menus = {
       name: "PERRIER-JOUET",
       price: "¥107,800",
       image: "images/Perrier-Jouet.png"
-    }
+    },
     
     {
       name: "PERRIER-JOUET ROSE",
       price: "¥107,800",
       image: "images/Perrier-Jouet_ROSE.png"
-    }
+    },
+    
     {
       name: "PERRIER-JOUET BLANC DE BLANCS",
       price: "¥107,800",
       image: "images/Perrier-Joue Blanc de Blancs.png"
-    }
+    },
 
     { type: "header", title: "DOM PÉRIGNON" },
     {
       name: "DOM PERIGNON",
       price: "¥107,800",
       image: "images/DOMPERI.png"
-    }
+    },
 
     { type: "header", title: "VEUVE" },
     {
       name: "VEUVE CLICQUOT",
       price: "¥107,800",
       image: "images/Veuve Clicquot.png"
-    }
+    },
+    
     {
       name: "VEUVE CLICQUOT RICH ROSE",
       price: "¥107,800",
       image: "images/Veuve Clicquot_Rich_Rose.png"
-    }
+    },
     
     { type: "header", title: "Cafe de Paris" },
     {
       name: "Cafe de Paris",
       price: "¥107,800",
       image: "images/Cafe de Paris.png"
-    }
+    },
   ],
 
   whisky: [
