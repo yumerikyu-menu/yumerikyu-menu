@@ -3,19 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>夢RIKYU MENU</title>
-  <link rel="stylesheet" href="style.css">
+
+  <!-- キャッシュ対策 -->
+  <link rel="stylesheet" href="style.css?v=3">
 </head>
+
 <body>
 
+  <!-- 最初のロゴ画面 -->
   <section id="openingScreen" class="opening-screen">
-  <div class="logo-wrap">
-    <img src="images/rikyu_logo.png" alt="夢RIKYU" class="opening-logo">
-    <div class="dream-mask"></div>
-    <div class="logo-shine"></div>
-  </div>
-</section>
-  
+    <div class="logo-wrap">
+
+      <img
+        src="images/rikyu_logo.png"
+        alt="夢RIKYU"
+        class="opening-logo"
+      >
+
+      <div class="dream-mask"></div>
+      <div class="logo-shine"></div>
+
+    </div>
+  </section>
+
+  <!-- ヘッダー -->
   <header id="mainHeader" class="hidden">
     <h1>夢RIKYU MENU</h1>
     <p>Select Menu</p>
@@ -25,35 +38,142 @@
 
     <!-- メインメニュー -->
     <section id="mainMenuScreen" class="menu-screen">
-      <button onclick="showDrinkCategories()">DRINK MENU</button>
 
-      <!-- ここだけ変更 -->
-      <button onclick="showSetMenu()">SET MENU</button>
+      <button type="button" onclick="showDrinkCategories()">
+        DRINK MENU
+      </button>
 
-      <button onclick="showFoodMenu()">FOOD MENU</button>
+      <button type="button" onclick="showSetMenu()">
+        SET MENU
+      </button>
+
+      <button type="button" onclick="showFoodMenu()">
+        FOOD MENU
+      </button>
+
+      <!-- カード・利用案内 -->
+      <section class="top-information">
+
+        <!-- 利用可能カード -->
+        <div class="payment-info">
+
+          <h2>各種カードご利用いただけます</h2>
+
+          <div class="card-logos">
+
+            <img
+              src="images/visa.png"
+              alt="VISA"
+              loading="lazy"
+            >
+
+            <img
+              src="images/mufg-card.png"
+              alt="MUFG CARD"
+              loading="lazy"
+            >
+
+            <img
+              src="images/ufj.png"
+              alt="UFJ"
+              loading="lazy"
+            >
+
+            <img
+              src="images/nicos.png"
+              alt="NICOS"
+              loading="lazy"
+            >
+
+            <img
+              src="images/mastercard.png"
+              alt="Mastercard"
+              loading="lazy"
+            >
+
+            <img
+              src="images/jcb.png"
+              alt="JCB"
+              loading="lazy"
+            >
+
+          </div>
+        </div>
+
+        <!-- 禁止事項 -->
+        <div class="usage-guide">
+
+          <h2>ご利用案内</h2>
+
+          <p>
+            ※ ボトル類の持ち込みは禁止させていただきます。
+          </p>
+
+          <p>
+            ※ 店内での写真・動画撮影は禁止させていただきます。
+          </p>
+
+          <p>
+            ※ おさわり等の迷惑行為は禁止させていただきます。
+          </p>
+
+        </div>
+
+      </section>
+
     </section>
 
     <!-- ドリンクカテゴリ -->
     <section id="drinkCategoryScreen" class="menu-screen hidden">
-      <button class="back-btn" onclick="showMainMenu()">← BACK</button>
 
-      <button onclick="showMenu('champagne')">CHAMPAGNE</button>
-      <button onclick="showMenu('whisky')">WHISKY</button>
-      <button onclick="showMenu('wine')">WINE</button>
-      <button onclick="showMenu('shochu')">SHOCHU</button>
-      <button onclick="showMenu('shot')">SHOT DRINK</button>
+      <button
+        type="button"
+        class="back-btn"
+        onclick="showMainMenu()"
+      >
+        ← BACK
+      </button>
+
+      <button type="button" onclick="showMenu('champagne')">
+        CHAMPAGNE
+      </button>
+
+      <button type="button" onclick="showMenu('whisky')">
+        WHISKY
+      </button>
+
+      <button type="button" onclick="showMenu('wine')">
+        WINE
+      </button>
+
+      <button type="button" onclick="showMenu('shochu')">
+        SHOCHU
+      </button>
+
+      <button type="button" onclick="showMenu('shot')">
+        SHOT DRINK
+      </button>
+
     </section>
 
-    <!-- MENUアニメーション -->
-    <section id="menuOpeningScreen" class="menu-opening-screen hidden">
+    <!-- カテゴリ切替アニメーション -->
+    <section
+      id="menuOpeningScreen"
+      class="menu-opening-screen hidden"
+    >
       <h1 id="menuOpeningTitle"></h1>
     </section>
 
-    <!-- 一覧表示 -->
+    <!-- 商品・料金・フード一覧 -->
     <section id="listScreen" class="list-screen hidden">
 
-      <!-- 戻るボタン -->
-      <button class="back-btn" onclick="showMainMenu()">← BACK</button>
+      <button
+        type="button"
+        class="back-btn"
+        onclick="showMainMenu()"
+      >
+        ← BACK
+      </button>
 
       <h2 id="categoryTitle"></h2>
 
@@ -63,7 +183,8 @@
 
   </main>
 
-  <script src="script.js"></script>
+  <!-- キャッシュ対策 -->
+  <script src="script.js?v=3"></script>
 
 </body>
 </html>
