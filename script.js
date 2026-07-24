@@ -193,7 +193,7 @@ const menus = {
     
   ],
 
-  Bourbon:　[
+  bourbon:　[
     { type: "header", title: "BOURBON" },
     {
       name: "WILD TURKEY",
@@ -207,7 +207,7 @@ const menus = {
     },
   ],
     
-  Brandy:　[
+  brandy:　[
     { type: "header", title: "Brandy" },
     {
       name: "HENNESY",
