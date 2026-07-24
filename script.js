@@ -160,9 +160,9 @@ const menus = {
       image: "images/yamazaki12.png"
     },
     {
-      name: "山崎18年",
+      name: "山崎ノンヴィンテージ",
       price: "¥30,000",
-      image: "images/yamazaki18.png"
+      image: "images/yamazaki_non_Vintage.png"
     },
     {
       name: "白州",
@@ -179,16 +179,45 @@ const menus = {
       price: "¥25,000",
       image: "images/macallan.png"
     },
+    {
+      name: "CHIVAS REGAL",
+      price: "¥25,000",
+      image: "images/Chivas.png"
+    },
+    {
+      name: "Maker's Mark",
+      price: "¥25,000",
+      image: "images/Makers_mark.png"
+    },
+    
     
   ],
 
   Bourbon:　[
     { type: "header", title: "BOURBON" },
     {
-      name: "Opus-One",
+      name: "WILD TURKEY",
       price: "¥15,000",
-      image: "images/opas-one.png"
+      image: "images/wild_turkey.png"
     },
+    {
+      name: "L.W.HARPER",
+      price: "¥15,000",
+      image: "images/LW_harper.png"
+    },
+
+  Brandy:　[
+    { type: "header", title: "Brandy" },
+    {
+      name: "HENNESY",
+      price: "¥15,000",
+      image: "images/Hennesy.png"
+    },
+    {
+      name: "REMY MARTIN",
+      price: "¥15,000",
+      image: "images/Remymartin.png"
+    }, 
   ],
 
   wine: [
