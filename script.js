@@ -290,24 +290,78 @@ const menus = {
   shochu: [
     { type: "header", title: "芋焼酎" },
     {
-      name: "黒霧島",
-      price: "¥8,000",
-      image: "images/kurokirishima.png"
+      name: "一刻者　石蔵甕貯蔵　陶器",
+      price: "¥9,000",
+      image: "images/ikkomon_toki.png"
+    },
+    {
+      name: "一刻者",
+      price: "¥5,000",
+      image: "images/ikkomon.png"
+    },
+    {
+      name: "赤兎馬",
+      price: "¥5,50",
+      image: "images/sekitoba.png"
     },
     {
       name: "赤霧島",
-      price: "¥4,500",
+      price: "¥5,000",
       image: "images/akakirishima.png"
     },
 
     { type: "header", title: "麦焼酎" },
     {
+      name: "いいちこ　スペシャル",
+      price: "¥8,000",
+      image: "images/iitiko-special.png"
+    },
+    {
+      name: "神の河",
+      price: "¥4,000",
+      image: "images/kannoko.png"
+    },
+    {
       name: "吉四六",
-      price: "¥11,000",
+      price: "¥10,000",
       image: "images/kicchomu.png"
     },
-    
   ],
+
+  shochu_z: [
+    { type: "header", title: "焼酎その他"},
+    {
+      name: "鏡月",
+      price: "¥3,000",
+      image: "images/kyougetu.png"
+    },
+    {
+      name: "柚子小町",
+      price: "¥4,500",
+      image: "images/yuzukomati.png"
+    },
+    {
+      name: "鍛高譚",
+      price: "¥3,500",
+      image: "images/tantakatan.png"
+    },
+    {
+      name: "鍛高譚の梅酒",
+      price: "¥3,500",
+      image: "images/tantakatan-ume.png"
+    },
+    {
+      name: "GIN",
+      price: "¥3,500",
+      image: "images/kyougetu.png"
+    },
+    {
+      name: "澪 -MIO-",
+      price: "¥1,500",
+      image: "images/kyougetu.png"
+    },
+    
+  ]
 
   shot: [
     { type: "header", title: "TEQUILA" },
@@ -347,6 +401,7 @@ const titles = {
   wine: "WINE",
   sake: "日本酒",
   shochu: "焼酎",
+  shochu_z: "焼酎その他",
   shot: "SHOT DRINK"
 };
 
