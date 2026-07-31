@@ -224,22 +224,38 @@ const menus = {
   wine: [
     { type: "header", title: "RED WINE" },
     {
-      name: "Opus-One",
+      name: "Opus One",
       price: "¥15,000",
       image: "images/opas-one.png"
     },
     {
-      name: "La dame de Monrose",
+      name: "CH.GRUAUD LAROSE",
+      price: "¥15,000",
+      image: "images/syato-guryuo.png"
+    },
+    {
+      name: "LA DAME DE MONTROSE",
       price: "¥15,000",
       image: "images/radum.png"
     },
-
-    { type: "header", title: "WHITE WINE" },
     {
-      name: "WHITE WINE",
+      name: "DOURTHE MARGAUX",
       price: "¥15,000",
-      image: "images/white-wine.png"
-    }
+      image: "images/DOURTHE MARGAUX.png"
+    },
+    {
+      name: "DOURTHE MEDEC",
+      price: "¥15,000",
+      image: "images/Dultomedec.png"
+    },
+    {
+      name: "MOUTON CADET",
+      price: "¥15,000",
+      image: "images/moutoncadet.png"
+    },
+    
+    
+
   ],
 
   日本酒: [
@@ -291,13 +307,18 @@ const menus = {
     { type: "header", title: "TEQUILA" },
     {
       name: "ANEHO SHOT",
-      price: "¥2,000",
+      price: "¥3,500",
       image: "images/aneho.png"
     },
     {
       name: "SAUZA SHOT",
-      price: "¥2,000",
+      price: "¥2,500",
       image: "images/sauza.png"
+    },
+    {
+      name: "Kleiner",
+      price: "¥2,500",
+      image: "images/kleiner.png"
     },
     {
       name: "テキーラ観覧車",
