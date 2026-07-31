@@ -258,7 +258,7 @@ const menus = {
 
   ],
 
-  日本酒: [
+  sake: [
     { type: "header", title: "日本酒" },
     {
       name: "水神",
@@ -277,7 +277,7 @@ const menus = {
     },
   ],
 
-  焼酎: [
+  syochu: [
     { type: "header", title: "芋焼酎" },
     {
       name: "黒霧島",
@@ -334,8 +334,8 @@ const titles = {
   bourbon: "BOURBON",
   brandy: "BRANDY",
   wine: "WINE",
-  日本酒: "日本酒",
-  焼酎: "焼酎",
+  sake: "日本酒",
+  syochu: "焼酎",
   shot: "SHOT DRINK"
 };
 
