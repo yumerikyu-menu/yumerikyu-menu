@@ -361,7 +361,7 @@ const menus = {
       image: "images/kyougetu.png"
     },
     
-  ]
+  ],
 
   shot: [
     { type: "header", title: "TEQUILA" },
