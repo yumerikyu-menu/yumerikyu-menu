@@ -3,44 +3,44 @@ const menus = {
     { type: "header", title: "ARMAND" },
     {
       name: "ARMAND GOLD",
-      price: "¥146,300",
+      price: "¥130,000",
       image: "images/Armand Gold bottle.png"
     },
     {
       name: "ARMAND GREEN",
-      price: "¥231,000",
+      price: "¥210,000",
       image: "images/Armand-Green.png"
     },
     {
       name: "ARMAND SILVER",
-      price: "¥423,500",
+      price: "¥385,000",
       image: "images/Armand-Silver.png"
     },
     {
       name: "ARMAND ROSE",
-      price: "¥231,000",
+      price: "¥210,000",
       image: "images/Armand-Rose.png"
     },
     {
       name: "ARMAND PURPLE",
-      price: "¥231,000",
+      price: "¥210,000",
       image: "images/Armand-Purple.png"
     },
     
     { type: "header", title: "ANGEL" },
     {
       name: "ANGEL WHITE",
-      price: "¥215,600",
+      price: "¥196,000",
       image: "images/ANGEL_WHITE.png"
     },
     {
       name: "ANGEL RUMINUS",
-      price: "¥188,650",
+      price: "¥171,500",
       image: "images/ANGEL_RUMINUS.png"
     },
     {
       name: "ANGEL BLACK",
-      price: "¥150,150",
+      price: "¥136,500",
       image: "images/ANGEL_BLACK.png"
     },
 
@@ -48,106 +48,106 @@ const menus = {
     { type: "header", title: "SOMEI" },
     {
       name: "SOMEI RED",
-      price: "¥90,000",
+      price: "¥800,000",
       image: "images/SOMEI_RED.png"
     },
     {
       name: "SOMEI BLUE",
-      price: "¥200,200",
+      price: "¥182,000",
       image: "images/SOMEI_BLUE.png"
     },
     {
       name: "SOMEI BLACK",
-      price: "¥518,100",
+      price: "¥471,000",
       image: "images/SOMEI_BLACK.png"
     },
     {
       name: "SOMEI PLATINA",
-      price: "¥364,100",
+      price: "¥331,000",
       image: "images/SOMEI_PLATHINA.png"
     },
     {
       name: "SOMEI ROSE",
-      price: "¥210,100",
+      price: "¥191,000",
       image: "images/SOMEI_ROSE.png"
     },
     {
       name: "SOMEI",
-      price: "¥115,500",
+      price: "¥105,000",
       image: "images/SOMEI.png"
     },
 
     { type: "header", title: "MOËT & CHANDON" },
     {
       name: "MOET BRUT",
-      price: "¥24,750",
+      price: "¥22,500",
       image: "images/MOET_BRUT.png"
     },
     {
       name: "MOET ICE",
-      price: "¥34,100",
+      price: "¥31,000",
       image: "images/MOET_ICE.png"
     },
     {
       name: "MOET NECTAR",
-      price: "¥31,900",
+      price: "¥29,000",
       image: "images/MOET_NECTOR.png"
     },
     {
       name: "MOET ROSE",
-      price: "¥29,700",
+      price: "¥27,000",
       image: "images/MOET_ROSE.png"
     },
 
     { type: "header", title: "PERRIER" },
     {
       name: "PERRIER-JOUET",
-      price: "¥107,800",
+      price: "¥28,000",
       image: "images/Perrier-Jouet.png"
     },
     
     {
       name: "PERRIER-JOUET ROSE",
-      price: "¥107,800",
+      price: "¥140,000",
       image: "images/Perrier-Jouet_ROSE.png"
     },
     
     {
       name: "PERRIER-JOUET BLANC DE BLANCS",
-      price: "¥107,800",
+      price: "¥311,000",
       image: "images/Perrier-Jouet Blanc de Blancs.png"
     },
 
     { type: "header", title: "DOM PÉRIGNON" },
     {
       name: "DOM PERIGNON",
-      price: "¥107,800",
+      price: "¥98,000",
       image: "images/DOMPERI.png"
     },
 
     { type: "header", title: "VEUVE" },
     {
       name: "VEUVE CLICQUOT",
-      price: "¥107,800",
+      price: "¥27,000",
       image: "images/Veuve Clicquot.png"
     },
     
     {
       name: "VEUVE CLICQUOT ROSE",
-      price: "¥107,800",
+      price: "¥29,500",
       image: "images/Veuve Clicquot_Rose.png"
     },
   
     {
       name: "VEUVE CLICQUOT RICH ROSE",
-      price: "¥107,800",
+      price: "¥35,000",
       image: "images/Veuve Clicquot_Rich_Rose.png"
     },
     
     { type: "header", title: "Cafe de Paris" },
     {
       name: "Cafe de Paris",
-      price: "¥107,800",
+      price: "¥6,500",
       image: "images/Cafe de Paris.png"
     },
   ],
@@ -156,37 +156,37 @@ const menus = {
     { type: "header", title: "WHISKY" },
     {
       name: "山崎12年",
-      price: "¥30,000",
+      price: "¥56,000",
       image: "images/yamazaki12.png"
     },
     {
       name: "山崎ノンヴィンテージ",
-      price: "¥30,000",
+      price: "¥Ask",
       image: "images/yamazaki_non_Vintage.png"
     },
     {
       name: "白州",
-      price: "¥30,000",
+      price: "¥36,500",
       image: "images/hakusyu.png"
     },
     {
       name: "響ブレンダーチョイス",
-      price: "¥35,000",
+      price: "¥56,000",
       image: "images/hibiki.png"
     },
     {
       name: "MACALLAN",
-      price: "¥25,000",
+      price: "¥45,500",
       image: "images/macallan.png"
     },
     {
       name: "CHIVAS REGAL",
-      price: "¥25,000",
+      price: "¥11,000",
       image: "images/Chivas.png"
     },
     {
       name: "Maker's Mark",
-      price: "¥25,000",
+      price: "¥11,000",
       image: "images/Makers_mark.png"
     },
     
@@ -197,12 +197,12 @@ const menus = {
     { type: "header", title: "BOURBON" },
     {
       name: "WILD TURKEY",
-      price: "¥15,000",
+      price: "¥10,500",
       image: "images/wild_turkey.png"
     },
     {
       name: "L.W.HARPER",
-      price: "¥15,000",
+      price: "¥7,500",
       image: "images/LW_harper.png"
     },
   ],
@@ -211,12 +211,12 @@ const menus = {
     { type: "header", title: "Brandy" },
     {
       name: "HENNESY",
-      price: "¥15,000",
+      price: "¥79,100",
       image: "images/Hennesy.png"
     },
     {
       name: "REMY MARTIN",
-      price: "¥15,000",
+      price: "¥22,400",
       image: "images/Remymartin.png"
     }, 
   ],
@@ -225,17 +225,17 @@ const menus = {
     { type: "header", title: "RED WINE" },
     {
       name: "Opus One",
-      price: "¥15,000",
+      price: "¥182,000",
       image: "images/opas-one.png"
     },
     {
       name: "CH.GRUAUD LAROSE",
-      price: "¥15,000",
+      price: "¥45,000",
       image: "images/syato-guryuo.png"
     },
     {
       name: "LA DAME DE MONTROSE",
-      price: "¥15,000",
+      price: "¥22,000",
       image: "images/radum.png"
     },
     {
@@ -245,19 +245,19 @@ const menus = {
     },
     {
       name: "DOURTHE MEDEC",
-      price: "¥15,000",
+      price: "¥9,000",
       image: "images/Dultomedec.png"
     },
     {
       name: "MOUTON CADET",
-      price: "¥15,000",
+      price: "¥5,000",
       image: "images/moutoncadet.png"
     },
 
     { type: "header", title: "WHITE WINE" },
     {
       name: "CHABLIS",
-      price: "¥15,000",
+      price: "¥12,500",
       image: "images/chablis.png"
     },
     {
@@ -276,13 +276,13 @@ const menus = {
       image: "images/suijin.png"
     },
     {
-      name: "久保田万寿",
-      price: "¥15,000",
+      name: "久保田千寿",
+      price: "¥Ask",
       image: "images/kubota.png"
     },
     {
       name: "獺祭 純米大吟醸",
-      price: "¥15,000",
+      price: "¥10,500",
       image: "images/dassai.png"
     },
   ],
