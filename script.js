@@ -339,41 +339,145 @@ const titles = {
   shot: "SHOT DRINK"
 };
 
+/*
+  一覧画面の戻り先を記録する変数
+
+  "main"  → MAIN MENUへ戻る
+  "drink" → DRINKカテゴリへ戻る
+*/
+let listBackDestination = "main";
+
+/*
+  カテゴリ切替アニメーション用タイマー
+
+  BACKボタンなどを連続して押した場合に、
+  古いsetTimeoutが後から実行されるのを防ぐ。
+*/
+let menuOpeningTimer = null;
+
+
+/* =========================
+   全画面を非表示
+========================= */
+
 function hideAllScreens() {
-  document.getElementById("mainMenuScreen").classList.add("hidden");
-  document.getElementById("drinkCategoryScreen").classList.add("hidden");
-  document.getElementById("menuOpeningScreen").classList.add("hidden");
-  document.getElementById("listScreen").classList.add("hidden");
+  document
+    .getElementById("mainMenuScreen")
+    .classList.add("hidden");
+
+  document
+    .getElementById("drinkCategoryScreen")
+    .classList.add("hidden");
+
+  document
+    .getElementById("menuOpeningScreen")
+    .classList.add("hidden");
+
+  document
+    .getElementById("listScreen")
+    .classList.add("hidden");
 }
+
+
+/* =========================
+   MAIN MENUを表示
+========================= */
 
 function showMainMenu() {
+  clearMenuOpeningTimer();
   hideAllScreens();
-  document.getElementById("mainMenuScreen").classList.remove("hidden");
+
+  document
+    .getElementById("mainMenuScreen")
+    .classList.remove("hidden");
+
   window.scrollTo(0, 0);
 }
 
+
+/* =========================
+   DRINKカテゴリを表示
+========================= */
+
 function showDrinkCategories() {
+  clearMenuOpeningTimer();
   hideAllScreens();
-  document.getElementById("drinkCategoryScreen").classList.remove("hidden");
+
+  document
+    .getElementById("drinkCategoryScreen")
+    .classList.remove("hidden");
+
   window.scrollTo(0, 0);
 }
+
+
+/* =========================
+   準備中表示
+========================= */
 
 function showComingSoon(title) {
   alert(`${title} は準備中です`);
 }
 
+
+/* =========================
+   一覧画面から戻る
+========================= */
+
+function goBackFromList() {
+  clearMenuOpeningTimer();
+
+  if (listBackDestination === "drink") {
+    showDrinkCategories();
+    return;
+  }
+
+  showMainMenu();
+}
+
+
+/* =========================
+   アニメーションタイマー解除
+========================= */
+
+function clearMenuOpeningTimer() {
+  if (menuOpeningTimer !== null) {
+    clearTimeout(menuOpeningTimer);
+    menuOpeningTimer = null;
+  }
+}
+
+
+/* =========================
+   SET MENU
+========================= */
+
 function showSetMenu() {
+  clearMenuOpeningTimer();
   hideAllScreens();
 
-  const listScreen = document.getElementById("listScreen");
-  const categoryTitle = document.getElementById("categoryTitle");
-  const menuList = document.getElementById("menuList");
+  /*
+    SET MENUの戻り先はMAIN MENU
+  */
+  listBackDestination = "main";
+
+  const listScreen =
+    document.getElementById("listScreen");
+
+  const categoryTitle =
+    document.getElementById("categoryTitle");
+
+  const menuList =
+    document.getElementById("menuList");
 
   categoryTitle.textContent = "SET MENU";
   menuList.innerHTML = "";
 
   const setMenu = [
-    { type: "header", title: "MAIN ROOM" },
+    {
+      type: "header",
+      title: "MAIN ROOM"
+    },
     {
       name: "20:00 ～ 20:59",
       detail: "40 min",
@@ -385,14 +489,20 @@ function showSetMenu() {
       price: "¥6,600"
     },
 
-    { type: "header", title: "KARAOKE VIP ROOM" },
+    {
+      type: "header",
+      title: "KARAOKE VIP ROOM"
+    },
     {
       name: "20:00 ～ LAST",
       detail: "60 min",
       price: "¥7,700"
     },
 
-    { type: "header", title: "OPTION" },
+    {
+      type: "header",
+      title: "OPTION"
+    },
     {
       name: "延長（30 min）",
       detail: "",
@@ -420,16 +530,21 @@ function showSetMenu() {
     }
   ];
 
-  setMenu.forEach(item => {
+  setMenu.forEach((item) => {
     if (item.type === "header") {
-      const title = document.createElement("div");
+      const title =
+        document.createElement("div");
+
       title.className = "set-section-title";
       title.textContent = item.title;
+
       menuList.appendChild(title);
       return;
     }
 
-    const row = document.createElement("div");
+    const row =
+      document.createElement("div");
+
     row.className = "luxury-set-row";
 
     row.innerHTML = `
@@ -437,7 +552,10 @@ function showSetMenu() {
         <h2>${item.name}</h2>
         ${item.detail ? `<p>${item.detail}</p>` : ""}
       </div>
-      <div class="luxury-price">${item.price}</div>
+
+      <div class="luxury-price">
+        ${item.price}
+      </div>
     `;
 
     menuList.appendChild(row);
@@ -447,20 +565,52 @@ function showSetMenu() {
   window.scrollTo(0, 0);
 }
 
+
+/* =========================
+   FOOD MENU
+========================= */
+
 function showFoodMenu() {
+  clearMenuOpeningTimer();
   hideAllScreens();
 
-  const listScreen = document.getElementById("listScreen");
-  const categoryTitle = document.getElementById("categoryTitle");
-  const menuList = document.getElementById("menuList");
+  /*
+    FOOD MENUの戻り先はMAIN MENU
+  */
+  listBackDestination = "main";
+
+  const listScreen =
+    document.getElementById("listScreen");
+
+  const categoryTitle =
+    document.getElementById("categoryTitle");
+
+  const menuList =
+    document.getElementById("menuList");
 
   categoryTitle.textContent = "FOOD MENU";
 
   menuList.innerHTML = `
     <div class="food-image-list">
-      <img src="images/LUSH_MENU.png" alt="LUSH">
-      <img src="images/三寿司_MENU.png" alt="三寿司">
-      <img src="images/鳥八_MENU.png" alt="鳥八">
+
+      <img
+        src="images/LUSH_MENU.png"
+        alt="LUSH"
+        loading="lazy"
+      >
+
+      <img
+        src="images/三寿司_MENU.png"
+        alt="三寿司"
+        loading="lazy"
+      >
+
+      <img
+        src="images/鳥八_MENU.png"
+        alt="鳥八"
+        loading="lazy"
+      >
+
     </div>
   `;
 
@@ -468,38 +618,94 @@ function showFoodMenu() {
   window.scrollTo(0, 0);
 }
 
+
+/* =========================
+   DRINK商品一覧
+========================= */
+
 function showMenu(category) {
-  const menuOpeningScreen = document.getElementById("menuOpeningScreen");
-  const menuOpeningTitle = document.getElementById("menuOpeningTitle");
-  const listScreen = document.getElementById("listScreen");
-  const categoryTitle = document.getElementById("categoryTitle");
-  const menuList = document.getElementById("menuList");
+  clearMenuOpeningTimer();
+
+  /*
+    ドリンク商品一覧の戻り先は
+    DRINKカテゴリ画面
+  */
+  listBackDestination = "drink";
+
+  const menuData = menus[category];
+  const menuTitle = titles[category];
+
+  /*
+    データの登録ミスがある場合、
+    undefined MENUを表示させずエラーを通知する
+  */
+  if (!menuData || !menuTitle) {
+    console.error(
+      `メニューが登録されていません。category: ${category}`
+    );
+
+    alert(
+      `${category} のメニューデータが登録されていません`
+    );
+
+    showDrinkCategories();
+    return;
+  }
+
+  const menuOpeningScreen =
+    document.getElementById("menuOpeningScreen");
+
+  const menuOpeningTitle =
+    document.getElementById("menuOpeningTitle");
+
+  const listScreen =
+    document.getElementById("listScreen");
+
+  const categoryTitle =
+    document.getElementById("categoryTitle");
+
+  const menuList =
+    document.getElementById("menuList");
 
   hideAllScreens();
 
-  menuOpeningTitle.textContent = `${titles[category]} MENU`;
+  menuOpeningTitle.textContent =
+    `${menuTitle} MENU`;
+
   menuOpeningScreen.classList.remove("hidden");
 
-  setTimeout(() => {
+  menuOpeningTimer = setTimeout(() => {
     hideAllScreens();
 
-    categoryTitle.textContent = `${titles[category]} MENU`;
+    categoryTitle.textContent =
+      `${menuTitle} MENU`;
+
     menuList.innerHTML = "";
 
-    menus[category].forEach(item => {
+    menuData.forEach((item) => {
       if (item.type === "header") {
-        const sectionTitle = document.createElement("div");
+        const sectionTitle =
+          document.createElement("div");
+
         sectionTitle.className = "section-title";
         sectionTitle.textContent = item.title;
+
         menuList.appendChild(sectionTitle);
         return;
       }
 
-      const card = document.createElement("div");
+      const card =
+        document.createElement("div");
+
       card.className = "card";
 
       card.innerHTML = `
-        <img src="${item.image}" alt="${item.name}">
+        <img
+          src="${item.image}"
+          alt="${item.name}"
+          loading="lazy"
+        >
+
         <div>
           <h2>${item.name}</h2>
           <p>${item.price}</p>
@@ -511,14 +717,31 @@ function showMenu(category) {
 
     listScreen.classList.remove("hidden");
     window.scrollTo(0, 0);
+
+    menuOpeningTimer = null;
   }, 1200);
 }
 
+
+/* =========================
+   最初のロゴ表示
+========================= */
+
 window.addEventListener("load", () => {
   setTimeout(() => {
-    document.getElementById("openingScreen").style.display = "none";
-    document.getElementById("mainHeader").classList.remove("hidden");
-    document.getElementById("mainContent").classList.remove("hidden");
+    const openingScreen =
+      document.getElementById("openingScreen");
+
+    const mainHeader =
+      document.getElementById("mainHeader");
+
+    const mainContent =
+      document.getElementById("mainContent");
+
+    openingScreen.style.display = "none";
+    mainHeader.classList.remove("hidden");
+    mainContent.classList.remove("hidden");
+
     showMainMenu();
   }, 3200);
 });
