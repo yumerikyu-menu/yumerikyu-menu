@@ -253,8 +253,18 @@ const menus = {
       price: "¥15,000",
       image: "images/moutoncadet.png"
     },
-    
-    
+
+    { type: "header", title: "WHITE WINE" },
+    {
+      name: "CHABLIS",
+      price: "¥15,000",
+      image: "images/chablis.png"
+    },
+    {
+      name: "MADONNA",
+      price: "¥15,000",
+      image: "images/madonna.png"
+    },
 
   ],
 
@@ -319,6 +329,11 @@ const menus = {
       name: "Kleiner",
       price: "¥2,500",
       image: "images/kleiner.png"
+    },
+    {
+      name: "Cocabomb",
+      price: "¥2,500",
+      image: "images/cocabomb.png"
     },
     {
       name: "テキーラ観覧車",
