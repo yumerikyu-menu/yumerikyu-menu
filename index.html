@@ -7,7 +7,7 @@
   <title>夢RIKYU MENU</title>
 
   <!-- キャッシュ対策 -->
-  <link rel="stylesheet" href="style.css?v=3">
+  <link rel="stylesheet" href="style.css?v=4">
 </head>
 
 <body>
@@ -126,10 +126,11 @@
     <!-- ドリンクカテゴリ -->
     <section id="drinkCategoryScreen" class="menu-screen hidden">
 
+      <!-- MAIN MENUへ戻る -->
       <button
         type="button"
         class="back-btn"
-        onclick="showDrinkCategories()"
+        onclick="showMainMenu()"
       >
         ← BACK
       </button>
@@ -154,11 +155,11 @@
         WINE
       </button>
 
-      <button type="button" onclick="showMenu('焼酎')">
+      <button type="button" onclick="showMenu('shochu')">
         焼酎
       </button>
 
-       <button type="button" onclick="showMenu('日本酒')">
+      <button type="button" onclick="showMenu('sake')">
         日本酒
       </button>
 
@@ -179,10 +180,11 @@
     <!-- 商品・料金・フード一覧 -->
     <section id="listScreen" class="list-screen hidden">
 
+      <!-- 遷移元によって戻り先を変更 -->
       <button
         type="button"
         class="back-btn"
-        onclick="showMainMenu()"
+        onclick="goBackFromList()"
       >
         ← BACK
       </button>
@@ -196,7 +198,7 @@
   </main>
 
   <!-- キャッシュ対策 -->
-  <script src="script.js?v=3"></script>
+  <script src="script.js?v=4"></script>
 
 </body>
 </html>
