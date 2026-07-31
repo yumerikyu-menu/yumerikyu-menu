@@ -353,12 +353,12 @@ const menus = {
     {
       name: "GIN",
       price: "¥3,500",
-      image: "images/kyougetu.png"
+      image: "images/GIN.png"
     },
     {
       name: "澪 -MIO-",
       price: "¥1,500",
-      image: "images/kyougetu.png"
+      image: "images/mio.png"
     },
     
   ],
