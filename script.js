@@ -272,7 +272,7 @@ const menus = {
     { type: "header", title: "日本酒" },
     {
       name: "水神",
-      price: "¥15,000",
+      price: "¥2,200",
       image: "images/suijin.png"
     },
     {
@@ -282,7 +282,7 @@ const menus = {
     },
     {
       name: "獺祭 純米大吟醸",
-      price: "¥10,500",
+      price: "¥8,800",
       image: "images/dassai.png"
     },
   ],
@@ -296,33 +296,29 @@ const menus = {
     },
     {
       name: "赤霧島",
-      price: "¥9,000",
+      price: "¥4,500",
       image: "images/akakirishima.png"
     },
 
     { type: "header", title: "麦焼酎" },
     {
       name: "吉四六",
-      price: "¥10,000",
+      price: "¥11,000",
       image: "images/kicchomu.png"
     },
-    {
-      name: "二階堂",
-      price: "¥8,000",
-      image: "images/nikaido.png"
-    },
+    
   ],
 
   shot: [
     { type: "header", title: "TEQUILA" },
     {
-      name: "ANEHO SHOT",
-      price: "¥3,500",
+      name: "ANEHO(Bottle or shot)",
+      price: "Bottle:¥80,000  Shot:¥3,500",
       image: "images/aneho.png"
     },
     {
-      name: "SAUZA SHOT",
-      price: "¥2,500",
+      name: "SAUZA(Bottole or shot)",
+      price: "Bottle:¥20,000 Shot:¥2,500",
       image: "images/sauza.png"
     },
     {
@@ -337,7 +333,7 @@ const menus = {
     },
     {
       name: "テキーラ観覧車",
-      price: "¥2,000",
+      price: "¥35,000",
       image: "images/tequila_kanransya.png"
     }
   ]
