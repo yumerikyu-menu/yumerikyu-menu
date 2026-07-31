@@ -277,7 +277,7 @@ const menus = {
     },
   ],
 
-  syochu: [
+  shochu: [
     { type: "header", title: "芋焼酎" },
     {
       name: "黒霧島",
@@ -335,7 +335,7 @@ const titles = {
   brandy: "BRANDY",
   wine: "WINE",
   sake: "日本酒",
-  syochu: "焼酎",
+  shochu: "焼酎",
   shot: "SHOT DRINK"
 };
 
