@@ -364,7 +364,6 @@ const menus = {
   ],
 
   shot: [
-    { type: "header", title: "TEQUILA" },
     {
       name: "ANEHO(Bottle or shot)",
       price: "Bottle:¥80,000  Shot:¥3,500",
