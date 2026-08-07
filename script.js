@@ -302,7 +302,7 @@ const menus = {
     {
       name: "一刻者",
       price: "¥5,500",
-      image: "images/Ikkomon.png"
+      image: "images/Ikkomon.jpg"
     },
     {
       name: "赤兎馬",
