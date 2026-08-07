@@ -297,12 +297,12 @@ const menus = {
     {
       name: "一刻者　石蔵甕貯蔵　陶器",
       price: "¥9,900",
-      image: "images/ikkomon_toki.png"
+      image: "images/Ikkomon_toki.png"
     },
     {
       name: "一刻者",
       price: "¥5,500",
-      image: "images/ikkomon.png"
+      image: "images/Ikkomon.png"
     },
     {
       name: "赤兎馬",
