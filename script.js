@@ -83,87 +83,96 @@ const menus = {
       price: "¥24,750",
       image: "images/MOET_BRUT.png"
     },
+    
     {
       name: "MOET ICE(モエアイス)",
       price: "¥34,100",
       image: "images/MOET_ICE.png"
     },
+    
     {
       name: "MOET NECTAR(モエネクター)",
       price: "¥31,900",
       image: "images/MOET_NECTOR.png"
     },
+    
     {
-      name: "MOET ROSE",
+      name: "MOET ROSE(モエロゼ)",
       price: "¥29,700",
       image: "images/MOET_ROSE.png"
     },
 
+    {
+      name: "MOET NECTOR INPERIAL ROSE(モエピカ)",
+      price: "¥35,200",
+      image: "images/MOET_NECTOR_IMPERIAL.png"
+    },
+
     { type: "header", title: "PERRIER" },
     {
-      name: "LAURENT PERRIER BRUT",
+      name: "LAURENT PERRIER BRUT(ローランペリエ)",
       price: "¥30,800",
       image: "images/Laurent-Perrier.png"
     },
     
     {
-      name: "PERRIER-JOUET BELL EPOQUE",
+      name: "PERRIER-JOUET BELL EPOQUE(ベルエポックロゼ)",
       price: "¥103,400",
       image: "images/Perrier-Jouet.png"
     },
 
     {
-      name: "BELLO EPOQUE BLANC DE BLANCS",
+      name: "BELLO EPOQUE BLANC DE BLANCS(ベルエポックブランドブラン)",
       price: "¥342,100",
       image: "images/Bello Epoque Blanc de Blancs.png"
     },
 
     {
-      name: "BELLO EPOQUE ROSE",
+      name: "BELLO EPOQUE ROSE(ベルエポックロゼ)",
       price: "¥154,000",
       image: "images/Perrier-Jouet_ROSE.png"
     },
     
     {
-      name: "PERRIER-JOUET BLANC DE BLANCS",
+      name: "PERRIER-JOUET BLANC DE BLANCS(ペリエブランドブラン)",
       price: "¥49.500",
       image: "images/Perrier-Jouet Blanc de Blancs.png"
     },
 
     { type: "header", title: "DOM PÉRIGNON" },
     {
-      name: "DOM PERIGNON",
+      name: "DOM PERIGNON(ドンペリ)",
       price: "¥107,800",
       image: "images/DOMPERI.png"
     },
     {
-      name: "DOM PERIGNON ROSE",
+      name: "DOM PERIGNON ROSE(ドンペリロゼ)",
       price: "¥204,600",
       image: "images/DOMPERI_Rose.png"
     },
 
     { type: "header", title: "VEUVE" },
     {
-      name: "VEUVE CLICQUOT",
+      name: "VEUVE CLICQUO(ヴーヴイエロー)T",
       price: "¥29,700",
       image: "images/Veuve Clicquot.png"
     },
     
     {
-      name: "VEUVE CLICQUOT ROSE",
+      name: "VEUVE CLICQUOT ROSE(ヴーヴロゼ)",
       price: "¥32,450",
       image: "images/Veuve Clicquot_Rose.png"
     },
   
     {
-      name: "VEUVE CLICQUOT RICH ROSE",
+      name: "VEUVE CLICQUOT RICH ROSE(ヴーヴリッチロゼ)",
       price: "¥38,500",
       image: "images/Veuve Clicquot_Rich_Rose.png"
     },
     
     { type: "header", title: "Cafe de Paris" },
     {
-      name: "Cafe de Paris",
+      name: "Cafe de Paris(カフェドパリ)",
       price: "¥7,150",
       image: "images/Cafe de Paris.png"
     },
@@ -192,20 +201,26 @@ const menus = {
       image: "images/hibiki.png"
     },
     {
-      name: "MACALLAN",
+      name: "MACALLAN(マッカラン12年)",
       price: "¥50,050",
       image: "images/macallan.png"
     },
     {
-      name: "CHIVAS REGAL",
+      name: "CHIVAS REGAL(シーバスリーガル)",
       price: "¥12,100",
       image: "images/Chivas.png"
     },
     {
-      name: "Maker's Mark",
+      name: "Maker's Mark(メーカーズマーク)",
       price: "¥12,100",
       image: "images/Makers_mark.png"
     },
+    {
+      name: "サントリー角瓶",
+      price: "¥6,600",
+      image: "images/Makers_mark.png"
+    },
+    
     
     
   ],
@@ -213,12 +228,12 @@ const menus = {
   bourbon:　[
     { type: "header", title: "BOURBON" },
     {
-      name: "WILD TURKEY",
+      name: "WILD TURKEY(ワイルドターキー)",
       price: "¥11,550",
       image: "images/wild_turkey.png"
     },
     {
-      name: "L.W.HARPER",
+      name: "I.W.HARPER(IWハーパー)",
       price: "¥8,250",
       image: "images/LW_harper.png"
     },
@@ -227,12 +242,12 @@ const menus = {
   brandy:　[
     { type: "header", title: "Brandy" },
     {
-      name: "HENNESY",
+      name: "HENNESY(ヘネシー)",
       price: "¥87,010",
       image: "images/Hennesy.png"
     },
     {
-      name: "REMY MARTIN",
+      name: "REMY MARTIN(レミーマルタン)",
       price: "¥24,640",
       image: "images/Remymartin.png"
     }, 
@@ -241,44 +256,44 @@ const menus = {
   wine: [
     { type: "header", title: "RED WINE" },
     {
-      name: "Opus One",
+      name: "Opus One(オーパスワン)",
       price: "¥200,200",
       image: "images/opas-one.png"
     },
     {
-      name: "CH.GRUAUD LAROSE",
+      name: "CH.GRUAUD LAROSE(シャトーグリュオラローズ)",
       price: "¥95,500",
       image: "images/syato-guryuo.png"
     },
     {
-      name: "LA DAME DE MONTROSE",
+      name: "LA DAME DE MONTROSE(ラダムドモンローズ)",
       price: "¥24,200",
       image: "images/radum.png"
     },
     {
-      name: "DOURTHE MARGAUX",
+      name: "DOURTHE MARGAUX(ドゥルトマルゴー)",
       price: "¥16,500",
       image: "images/DOURTHE MARGAUX.png"
     },
     {
-      name: "DOURTHE MEDEC",
+      name: "DOURTHE MEDEC(ドゥルトメデック)",
       price: "¥9,900",
       image: "images/Dultomedec.png"
     },
     {
-      name: "MOUTON CADET",
+      name: "MOUTON CADET(ムートンカデ)",
       price: "¥5,500",
       image: "images/moutoncadet.png"
     },
 
     { type: "header", title: "WHITE WINE" },
     {
-      name: "CHABLIS",
+      name: "CHABLIS(シャブリ)",
       price: "¥13,750",
       image: "images/chablis.png"
     },
     {
-      name: "MADONNA",
+      name: "MADONNA(マドンナ)",
       price: "¥16,500",
       image: "images/madonna.png"
     },
