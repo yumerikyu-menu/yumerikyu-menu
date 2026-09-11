@@ -218,7 +218,7 @@ const menus = {
     {
       name: "サントリー角瓶",
       price: "¥6,600",
-      image: "images/Makers_mark.png"
+      image: "images/suntory.png"
     },
     
     
