@@ -63,7 +63,7 @@ const menus = {
     },
     {
       name: "SOMEI PLATINA",
-      price: "¥518,100",
+      price: "¥364,100",
       image: "images/SOMEI_PLATHINA.png"
     },
     {
@@ -102,19 +102,31 @@ const menus = {
     { type: "header", title: "PERRIER" },
     {
       name: "LAURENT PERRIER BRUT",
-      price: "¥49,500",
-      image: "images/Perrier-Jouet.png"
+      price: "¥30,800",
+      image: "images/Laurent-Perrier.png"
     },
     
     {
-      name: "PERRIER-JOUET ROSE",
-      price: "¥140,000",
+      name: "PERRIER-JOUET BELL EPOQUE",
+      price: "¥103,400",
+      image: "images/Perrier-Jouet.png"
+    },
+
+    {
+      name: "BELLO EPOQUE BLANC DE BLANCS",
+      price: "¥342,100",
+      image: "images/Bello Epoque Blanc de Blancs.png"
+    },
+
+    {
+      name: "BELLO EPOQUE ROSE",
+      price: "¥154,000",
       image: "images/Perrier-Jouet_ROSE.png"
     },
     
     {
       name: "PERRIER-JOUET BLANC DE BLANCS",
-      price: "¥311,000",
+      price: "¥49.500",
       image: "images/Perrier-Jouet Blanc de Blancs.png"
     },
 
