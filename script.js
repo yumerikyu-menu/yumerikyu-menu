@@ -2,44 +2,44 @@ const menus = {
   champagne: [
     { type: "header", title: "ARMAND" },
     {
-      name: "ARMAND GOLD",
+      name: "ARMAND GOLD(アルマンドゴールド)",
       price: "¥146,300",
       image: "images/Armand Gold bottle.png"
     },
     {
-      name: "ARMAND GREEN",
+      name: "ARMAND GREEN(アルマンドグリーン)",
       price: "¥231,000",
       image: "images/Armand-Green.png"
     },
     {
-      name: "ARMAND SILVER",
+      name: "ARMAND SILVER(アルマンドシルバー)",
       price: "¥423,500",
       image: "images/Armand-Silver.png"
     },
     {
-      name: "ARMAND ROSE",
+      name: "ARMAND ROSE(アルマンドロゼ)",
       price: "¥231,000",
       image: "images/Armand-Rose.png"
     },
     {
-      name: "ARMAND PURPLE",
+      name: "ARMAND PURPLE(アルマンドパープル)",
       price: "¥231,000",
       image: "images/Armand-Purple.png"
     },
     
     { type: "header", title: "ANGEL" },
     {
-      name: "ANGEL WHITE",
+      name: "ANGEL WHITE(エンジェルホワイト)",
       price: "¥215,600",
       image: "images/ANGEL_WHITE.png"
     },
     {
-      name: "ANGEL RUMINUS",
+      name: "ANGEL RUMINUS(エンジェルルミナス)",
       price: "¥188,650",
       image: "images/ANGEL_RUMINUS.png"
     },
     {
-      name: "ANGEL BLACK",
+      name: "ANGEL BLACK(エンジェルブラック)",
       price: "¥150,150",
       image: "images/ANGEL_BLACK.png"
     },
@@ -47,49 +47,49 @@ const menus = {
     
     { type: "header", title: "SOMEI" },
     {
-      name: "SOMEI RED",
+      name: "SOMEI RED(ソウメイレッド)",
       price: "¥880,000",
       image: "images/SOMEI_RED.png"
     },
     {
-      name: "SOMEI BLUE",
+      name: "SOMEI BLUE(ソウメイブルー)",
       price: "¥200,200",
       image: "images/SOMEI_BLUE.png"
     },
     {
-      name: "SOMEI BLACK",
+      name: "SOMEI BLACK(ソウメイブラック)",
       price: "¥518,100",
       image: "images/SOMEI_BLACK.png"
     },
     {
-      name: "SOMEI PLATINA",
+      name: "SOMEI PLATINA(ソウメイプラチナ)",
       price: "¥364,100",
       image: "images/SOMEI_PLATHINA.png"
     },
     {
-      name: "SOMEI ROSE",
+      name: "SOMEI ROSE(ソウメイロゼ)",
       price: "¥210,100",
       image: "images/SOMEI_ROSE.png"
     },
     {
-      name: "SOMEI",
+      name: "SOMEI(ソウメイ)",
       price: "¥115,500",
       image: "images/SOMEI.png"
     },
 
     { type: "header", title: "MOËT & CHANDON" },
     {
-      name: "MOET BRUT",
+      name: "MOET BRUT(モエシャンドンブリュット)",
       price: "¥24,750",
       image: "images/MOET_BRUT.png"
     },
     {
-      name: "MOET ICE",
+      name: "MOET ICE(モエアイス)",
       price: "¥34,100",
       image: "images/MOET_ICE.png"
     },
     {
-      name: "MOET NECTAR",
+      name: "MOET NECTAR(モエネクター)",
       price: "¥31,900",
       image: "images/MOET_NECTOR.png"
     },
