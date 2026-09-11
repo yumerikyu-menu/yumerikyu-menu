@@ -101,8 +101,8 @@ const menus = {
 
     { type: "header", title: "PERRIER" },
     {
-      name: "PERRIER-JOUET",
-      price: "¥28,000",
+      name: "LAURENT PERRIER BRUT",
+      price: "¥49,500",
       image: "images/Perrier-Jouet.png"
     },
     
