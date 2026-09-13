@@ -682,3 +682,249 @@ header p {
     border-radius: 12px;
   }
 }
+
+/* =========================================================
+   文字サイズ拡大
+   夢RIKYU MENU 全体
+========================================================= */
+
+
+/* =========================
+   ヘッダー
+========================= */
+
+header h1 {
+  font-size: 2.4rem;
+}
+
+header p {
+  font-size: 1.25rem;
+}
+
+
+/* =========================
+   MAIN MENU / カテゴリボタン
+========================= */
+
+.menu-screen button {
+  font-size: 1.3rem;
+}
+
+
+/* =========================
+   BACKボタン
+========================= */
+
+.back-btn {
+  font-size: 1.1rem !important;
+}
+
+
+/* =========================
+   商品一覧ページタイトル
+   CHAMPAGNE MENU 等
+========================= */
+
+#categoryTitle {
+  font-size: 2.1rem;
+}
+
+
+/* =========================
+   シャンパン等のブランド見出し
+   ARMAND / SOMEI / MOËT 等
+========================= */
+
+.section-title {
+  font-size: 1.4rem;
+}
+
+
+/* =========================
+   DRINK商品カード
+========================= */
+
+/* 商品名 */
+.card h2 {
+  font-size: 1.55rem;
+  line-height: 1.35;
+}
+
+/* 価格 */
+.card p {
+  font-size: 1.55rem;
+  line-height: 1.4;
+}
+
+
+/* =========================
+   SET MENU
+========================= */
+
+/* MAIN ROOM / OPTION 等 */
+.set-section-title {
+  font-size: 1.45rem;
+}
+
+/* 時間・項目名 */
+.set-info h2 {
+  font-size: 1.45rem;
+}
+
+/* 40 min / 60 min 等 */
+.set-info p {
+  font-size: 1.1rem;
+}
+
+/* 金額 */
+.luxury-price {
+  font-size: 1.55rem;
+}
+
+
+/* =========================
+   MAIN画面 DRINK PRICE
+========================= */
+
+.quick-drink-main-title {
+  font-size: 1.7rem;
+}
+
+.quick-drink-section h3 {
+  font-size: 1.3rem;
+}
+
+.quick-drink-name {
+  font-size: 1.3rem;
+}
+
+.quick-drink-detail {
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+.quick-drink-price {
+  font-size: 1.55rem;
+}
+
+
+/* =========================
+   カード利用案内・ご利用案内
+========================= */
+
+.payment-info h2,
+.usage-guide h2 {
+  font-size: 1.4rem;
+}
+
+.usage-guide p {
+  font-size: 1.05rem;
+  line-height: 1.9;
+}
+
+
+/* =========================================================
+   スマホ用
+========================================================= */
+
+@media (max-width: 768px) {
+
+  /* ヘッダー */
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 1.1rem;
+  }
+
+
+  /* MAIN MENU / カテゴリ */
+  .menu-screen button {
+    font-size: 1.2rem;
+  }
+
+
+  /* BACK */
+  .back-btn {
+    font-size: 1rem !important;
+  }
+
+
+  /* CHAMPAGNE MENU 等 */
+  #categoryTitle {
+    font-size: 1.75rem;
+  }
+
+
+  /* ARMAND / SOMEI 等 */
+  .section-title {
+    font-size: 1.2rem;
+  }
+
+
+  /* 商品名 */
+  .card h2 {
+    font-size: 1.3rem;
+    line-height: 1.4;
+  }
+
+  /* 商品価格 */
+  .card p {
+    font-size: 1.35rem;
+    line-height: 1.4;
+  }
+
+
+  /* SET MENU */
+  .set-section-title {
+    font-size: 1.2rem;
+  }
+
+  .set-info h2 {
+    font-size: 1.25rem;
+  }
+
+  .set-info p {
+    font-size: 1rem;
+  }
+
+  .luxury-price {
+    font-size: 1.35rem;
+  }
+
+
+  /* DRINK PRICE */
+  .quick-drink-main-title {
+    font-size: 1.45rem;
+  }
+
+  .quick-drink-section h3 {
+    font-size: 1.15rem;
+  }
+
+  .quick-drink-name {
+    font-size: 1.15rem;
+  }
+
+  .quick-drink-detail {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  .quick-drink-price {
+    font-size: 1.3rem;
+  }
+
+
+  /* ご利用案内 */
+  .payment-info h2,
+  .usage-guide h2 {
+    font-size: 1.2rem;
+  }
+
+  .usage-guide p {
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+}
